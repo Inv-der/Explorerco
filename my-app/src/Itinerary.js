@@ -13,15 +13,18 @@ function Itinerary({ planet }) {
         }
     };
 
-    const downloadBucketList = () => {
-        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(selectedPOIs));
-        const downloadAnchorNode = document.createElement('a');
-        downloadAnchorNode.setAttribute("href", dataStr);
-        downloadAnchorNode.setAttribute("download", "bucketList.json");
-        document.body.appendChild(downloadAnchorNode); 
-        downloadAnchorNode.click();
-        downloadAnchorNode.remove();
-    }
+    const downloadBucketListDoc = () => {
+        let htmlContent = "<h1>Bucket List</h1>";
+        selectedPOIs.forEach(poi => {
+            htmlContent += `<p>${poi.name} Visited: [ ]</p>`;
+        });
+
+        const blob = new Blob([htmlContent], { type: 'text/html' });
+        const url = window.URL.createObjectURL(blob);
+        window.open(url, "_blank");
+    };
+
+        
       
     return (
         <div>
@@ -52,10 +55,10 @@ function Itinerary({ planet }) {
             </ul>
 
             {selectedPOIs.length > 0 && (
-                <button onClick={downloadBucketList}>
+                <button onClick={downloadBucketListDoc}>
                     Download Bucket List
                 </button>
-            )}
+    )}
         </div>
     );
 }
