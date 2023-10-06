@@ -1,4 +1,12 @@
-{
+{"solar": {
+    "title": "solar system",
+    "desc": "Venture to the closest planet to the Sun. With scorching days and freezing nights, it's a world of extremes. Marvel at sunrise and sunset on the same horizon!",
+    "distance": {
+        "value": 91690000,
+        "unit": "kilometers"
+    },
+    "image": "my-app/src/data/images/1.png"
+},
     "mercury": {
         "title": "Mercury",
         "desc": "Venture to the closest planet to the Sun. With scorching days and freezing nights, it's a world of extremes. Marvel at sunrise and sunset on the same horizon!",
