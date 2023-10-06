@@ -17,7 +17,7 @@ function CoolNavbar() {
             alt="INV@DER$"
             style={{ maxHeight: '30px' }}
           />
-          {' '}INV@DER$
+          {' '}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
