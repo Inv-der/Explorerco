@@ -1,4 +1,5 @@
 {
+    
     "mercury": {
         "title": "Mercury",
         "desc": "Venture to the closest planet to the Sun. With scorching days and freezing nights, it's a world of extremes. Marvel at sunrise and sunset on the same horizon!",
@@ -6,62 +7,54 @@
             "value": 91690000,
             "unit": "kilometers"
         },
-        "image": "my-app/src/data/images/1.png"
+        "tips":"tips",
+        "travel_methods":{
+            "1":"Travel by car",
+            "2":"Travel by train",
+            "3":"Travel by plane"
+        },
+        "image": "my-app/src/data/images/1.png",
+        "points_of_interest": [
+            {
+                "name":"hi",
+                "desc":"hi",
+                "image":"my-app/src/data/images/1.png"
+            },
+            {
+                "name":"hi2",
+                "desc":"hiw",
+                "image":"my-app/src/data/images/1.png"
+            }
+        ]
     },
-    "venus": {
+    
+    "venus":{
         "title": "Venus",
-        "desc": "Journey to our 'sister planet', shrouded in thick clouds and mysteries. Feel the intense heat and explore its volcanic plains. A mesmerizing hellish beauty.",
+        "desc": "Venture to the closest planet to the Sun. With scorching days and freezing nights, it's a world of extremes. Marvel at sunrise and sunset on the same horizon!",
         "distance": {
-            "value": 41400000,
+            "value": 91690000,
             "unit": "kilometers"
-        }
-    },
-    "earth": {
-        "title": "Earth",
-        "desc": "Discover the blue jewel of our solar system, brimming with diverse landscapes and life. From its blue oceans to green forests, it's a paradise like no other.",
-        "distance": {
-            "value": 0,
-            "unit": "kilometers"
-        }
-    },
-    "mars": {
-        "title": "Mars",
-        "desc": "Embark on an adventure to the Red Planet. Explore its rugged terrain, giant volcanoes, and deep canyons. Be a pioneer in humanity's quest for life beyond Earth.",
-        "distance": {
-            "value": 78340000,
-            "unit": "kilometers"
-        }
-    },
-    "jupiter": {
-        "title": "Jupiter",
-        "desc": "Behold the giant of our solar system. With its Great Red Spot and immense storms, its majesty is unparalleled. Float among its 79 moons and experience its magnetic allure.",
-        "distance": {
-            "value": 628730000,
-            "unit": "kilometers"
-        }
-    },
-    "saturn": {
-        "title": "Saturn",
-        "desc": "Witness the planet with golden rings. Float amidst its icy rings and gaze upon its many moons. Saturn's beauty will leave you spellbound.",
-        "distance": {
-            "value": 1275000000,
-            "unit": "kilometers"
-        }
-    },
-    "uranus": {
-        "title": "Uranus",
-        "desc": "Venture to the ice giant that lies on its side. With its azure blue color and extreme seasons, it's a world of wonders. Delve into the mysteries of this distant planet.",
-        "distance": {
-            "value": 2723950000,
-            "unit": "kilometers"
-        }
-    },
-    "neptune": {
-        "title": "Neptune",
-        "desc": "Journey to the last known planet of our solar system. Dive into its deep blue atmosphere, experience fierce winds and watch its dark storms. Truly, a dreamer's paradise.",
-        "distance": {
-            "value": 4351400000,
-            "unit": "kilometers"
-        }
+        },
+        "tips":"tips",
+        "travel_methods":{
+            "1":"Travel by car",
+            "2":"Travel by train",
+            "3":"Travel by plane"
+        },
+        "image": "my-app/src/data/images/1.png",
+        "points_of_interest": [
+            {
+                "name":"hi",
+                "desc":"hi",
+                "image":"my-app/src/data/images/1.png"
+            },
+            {
+                "name":"hi2",
+                "desc":"hiw",
+                "image":"my-app/src/data/images/1.png"
+            }
+        ]
     }
-}
+
+
+    }
