@@ -1,128 +1,67 @@
-[
 {
-    "Mars": {
-        "name": "Mars",
-        "description": "Embark on an adventure to the Red Planet. Explore its rugged terrain, giant volcanoes, and deep canyons.",
-        "image": "path/to/mars_image.png",
-        "distance_from_earth": {
-            "value": 78340000,
+    "mercury": {
+        "title": "Mercury",
+        "desc": "Venture to the closest planet to the Sun. With scorching days and freezing nights, it's a world of extremes. Marvel at sunrise and sunset on the same horizon!",
+        "distance": {
+            "value": 91690000,
             "unit": "kilometers"
-        }
-    },
-    "travel_details": {
-        "departure_date": "2025-04-15",
-        "return_date": "2025-10-10",
-        "journey_duration": {
-            "value": 7,
-            "unit": "months"
         },
-        "spacecraft": {
-            "name": "Starship 7",
-            "description": "A state-of-the-art spacecraft with advanced life support and entertainment systems.",
-            "image": "path/to/starship_image.png"
-        }
+        "image": "my-app/src/data/images/1.png"
     },
-    "accommodation": {
-        "name": "Mars Base Alpha",
-        "description": "A luxurious habitat providing all the comforts of home, including panoramic views of the Martian landscape.",
-        "image": "path/to/mars_base_image.png",
-        "amenities": ["Wi-Fi", "Gym", "Observatory", "Greenhouse", "Medical Bay"]
-    },
-    "timetable": [
-        {
-            "day": 1,
-            "activities": ["Arrival at Mars Base Alpha", "Orientation and Safety Briefing"]
-        },
-        {
-            "day": 2,
-            "activities": ["Visit Olympus Mons", "Picnic at Valles Marineris"]
-        }
-        
-    ],
-    "points_of_interest": [
-        {
-            "name": "Olympus Mons",
-            "description": "The tallest volcano and mountain in the solar system.",
-            "image": "path/to/olympus_mons_image.png"
-        },
-        {
-            "name": "Valles Marineris",
-            "description": "A canyon system that runs along the Martian surface.",
-            "image": "path/to/valles_marineris_image.png"
-        }
-        
-    ],
-    "safety_tips": [
-        "Always wear your space suit when outside the habitat.",
-        "Stay hydrated and consume prescribed vitamins.",
-        "Avoid walking alone in unfamiliar terrain."
-    ],
-    "cultural_etiquette": [
-        "Acknowledge Martian Time Zones when scheduling activities.",
-        "Respect designated preservation areas, avoid leaving any trace behind."
-    ],
-    "packing_list": ["Space suit", "UV sunglasses", "Personal medication", "Electronic devices", "Personal diary", "E-books"]
-},
-{
-    "Venus": {
-        "name": "Venus",
-        "description": "Travel to our closest neighboring planet. Experience its thick atmosphere and the mysteries hidden beneath its dense clouds.",
-        "image": "path/to/venus_image.png",
-        "distance_from_earth": {
+    "venus": {
+        "title": "Venus",
+        "desc": "Journey to our 'sister planet', shrouded in thick clouds and mysteries. Feel the intense heat and explore its volcanic plains. A mesmerizing hellish beauty.",
+        "distance": {
             "value": 41400000,
             "unit": "kilometers"
         }
     },
-    "travel_details": {
-        "departure_date": "2026-05-18",
-        "return_date": "2026-11-12",
-        "journey_duration": {
-            "value": 6,
-            "unit": "months"
-        },
-        "spacecraft": {
-            "name": "Venus Voyager 2",
-            "description": "A specialized spacecraft equipped to handle Venus's intense heat and atmospheric pressure.",
-            "image": "path/to/venus_voyager_image.png"
+    "earth": {
+        "title": "Earth",
+        "desc": "Discover the blue jewel of our solar system, brimming with diverse landscapes and life. From its blue oceans to green forests, it's a paradise like no other.",
+        "distance": {
+            "value": 0,
+            "unit": "kilometers"
         }
     },
-    "accommodation": {
-        "name": "Venus Sky Habitat",
-        "description": "A floating habitat suspended within the upper layers of Venus's atmosphere. Experience breathtaking views of the Venusian clouds.",
-        "image": "path/to/venus_habitat_image.png",
-        "amenities": ["Wi-Fi", "Gym", "Observatory Deck", "Research Lab", "Medical Bay"]
+    "mars": {
+        "title": "Mars",
+        "desc": "Embark on an adventure to the Red Planet. Explore its rugged terrain, giant volcanoes, and deep canyons. Be a pioneer in humanity's quest for life beyond Earth.",
+        "distance": {
+            "value": 78340000,
+            "unit": "kilometers"
+        }
     },
-    "timetable": [
-        {
-            "day": 1,
-            "activities": ["Arrival at Venus Sky Habitat", "Orientation and Safety Briefing"]
-        },
-        {
-            "day": 2,
-            "activities": ["Explore Venusian Cloud Formations", "Study Atmospheric Phenomena"]
+    "jupiter": {
+        "title": "Jupiter",
+        "desc": "Behold the giant of our solar system. With its Great Red Spot and immense storms, its majesty is unparalleled. Float among its 79 moons and experience its magnetic allure.",
+        "distance": {
+            "value": 628730000,
+            "unit": "kilometers"
         }
-    ],
-    "points_of_interest": [
-        {
-            "name": "Maxwell Montes",
-            "description": "The highest mountain range on Venus.",
-            "image": "path/to/maxwell_montes_image.png"
-        },
-        {
-            "name": "Aphrodite Terra",
-            "description": "The largest highland region on Venus.",
-            "image": "path/to/aphrodite_terra_image.png"
+    },
+    "saturn": {
+        "title": "Saturn",
+        "desc": "Witness the planet with golden rings. Float amidst its icy rings and gaze upon its many moons. Saturn's beauty will leave you spellbound.",
+        "distance": {
+            "value": 1275000000,
+            "unit": "kilometers"
         }
-    ],
-    "safety_tips": [
-        "Ensure protective gear is worn at all times due to extreme temperatures.",
-        "Stay within marked zones in the habitat.",
-        "Avoid direct exposure to the sun."
-    ],
-    "cultural_etiquette": [
-        "Remember to mark Venus Day which lasts longer than a Venusian year.",
-        "Respect the scientific protocols set in place to protect any potential life forms."
-    ],
-    "packing_list": ["Heat-resistant suit", "UV sunglasses", "Personal medication", "Electronic devices", "Personal diary", "Educational materials about Venus"]
+    },
+    "uranus": {
+        "title": "Uranus",
+        "desc": "Venture to the ice giant that lies on its side. With its azure blue color and extreme seasons, it's a world of wonders. Delve into the mysteries of this distant planet.",
+        "distance": {
+            "value": 2723950000,
+            "unit": "kilometers"
+        }
+    },
+    "neptune": {
+        "title": "Neptune",
+        "desc": "Journey to the last known planet of our solar system. Dive into its deep blue atmosphere, experience fierce winds and watch its dark storms. Truly, a dreamer's paradise.",
+        "distance": {
+            "value": 4351400000,
+            "unit": "kilometers"
+        }
+    }
 }
-]
