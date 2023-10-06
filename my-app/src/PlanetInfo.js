@@ -1,4 +1,5 @@
 import React from 'react';
+import './PlanetInfo.css'; 
 
 function PlanetInfo({ planet }) {
     if (!planet) return <p>Select a planet to view details.</p>;

@@ -13,7 +13,7 @@
             "2":"Travel by train",
             "3":"Travel by plane"
         },
-        "image": "my-app/src/data/images/1.png",
+        "image": "/planets/mercuryn.webp",
         "points_of_interest": [
             {
                 "name":"hi",

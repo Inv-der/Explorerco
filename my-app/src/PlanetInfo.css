@@ -1,0 +1,47 @@
+.planet-container {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+}
+
+.planet-image {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+p {
+    color: #555;
+}
+
+h4 {
+    margin-top: 20px;
+    color: #444;
+}
+
+ul.travel-methods, 
+ul.points-of-interest {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555;
+}
+
+.poi-image {
+    display: block;
+    max-width: 80%;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
