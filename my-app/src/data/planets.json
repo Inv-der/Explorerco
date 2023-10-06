@@ -9,21 +9,21 @@
         },
         "tips":"Protect against extreme heat with advanced cooling systems in your spacesuit.        ",
         "travel_methods":{
-            "1":"Travel by car",
-            "2":"Travel by train",
-            "3":"Travel by plane"
+            "1":"Travel by Voyager 2",
+            "2":"Travel by Hayabusa2",
+            "3":"Travel by Boeing CST-100 Starliner"
         },
         "image": "/planets/mercuryn.webp",
         "points_of_interest": [
             {
                 "name":"Caloris Basin",
                 "desc":" A large impact crater with intriguing geological features.",
-                "image":"my-app/src/data/images/1.png"
+                "image":"/planets/calorisbasin.png"
             },
             {
-                "name":"hi2",
-                "desc":"hiw",
-                "image":"my-app/src/data/images/1.png"
+                "name":"Picasso Crater",
+                "desc":"Picasso is a crater on Mercury. It has drawn scientific attention because of the large, arc-shaped pit crater located on the eastern side of its floor. 44wq1",
+                "image":"/planets/picasso.jpg"
             }
         ]
     },
@@ -37,11 +37,11 @@
         },
         "tips":" Use specially designed spacecraft to withstand the extreme heat and pressure.",
         "travel_methods":{
-            "1":"Travel by car",
-            "2":"Travel by train",
-            "3":"Travel by plane"
+            "1":"Travel by Venera Program (",
+            "2":"Travel by Akatsuki ",
+            "3":"Travel by Venus Express"
         },
-        "image": "my-app/src/data/images/1.png",
+        "image": "/planets/venusn.webp",
         "points_of_interest": [
             {
                 "name":"Ishtar Terra",
@@ -72,7 +72,7 @@
         "points_of_interest": [
             {
                 "name":"The Great Barrier Reef",
-                "desc":"The Great Barrier Reef in Australia for incredible marine life and coral reefs.        ",
+                "desc":"The Great Barrier Reef in Australia for incredible marine life and coral reefs. ",
                 "image":"my-app/src/data/images/1.png"
             },
             {
