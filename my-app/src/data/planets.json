@@ -1,75 +1,204 @@
-{"solar": {
-    "title": "solar system",
-    "desc": "Venture to the closest planet to the Sun. With scorching days and freezing nights, it's a world of extremes. Marvel at sunrise and sunset on the same horizon!",
-    "distance": {
-        "value": 91690000,
-        "unit": "kilometers"
+{
+    "solar": {
+        
+        "tips": "A vast cosmic journey awaits! Ensure you have essentials and be prepared for long stretches of space travel.",
+        "travel_methods": ["Space Shuttle", "Warp Drive"],
+        "POIs": [
+            {
+                "name": "Asteroid Belt",
+                "desc": "Navigate through a dense region filled with remnants from the formation of the solar system.",
+                "image": "my-app/src/data/images/1.png"
+            },
+            {
+                "name": "Kuiper Belt",
+                "desc": "Journey beyond Neptune and witness the home of the dwarf planets and many comets.",
+                "image": "my-app/src/data/images/1.png"
+            }
+        ]
     },
-    "image": "my-app/src/data/images/1.png"
-},
     "mercury": {
-        "title": "Mercury",
-        "desc": "Venture to the closest planet to the Sun. With scorching days and freezing nights, it's a world of extremes. Marvel at sunrise and sunset on the same horizon!",
-        "distance": {
-            "value": 91690000,
-            "unit": "kilometers"
-        },
-        "image": "my-app/src/data/images/1.png"
-    },
-    "venus": {
-        "title": "Venus",
-        "desc": "Journey to our 'sister planet', shrouded in thick clouds and mysteries. Feel the intense heat and explore its volcanic plains. A mesmerizing hellish beauty.",
-        "distance": {
-            "value": 41400000,
-            "unit": "kilometers"
-        }
-    },
-    "earth": {
-        "title": "Earth",
-        "desc": "Discover the blue jewel of our solar system, brimming with diverse landscapes and life. From its blue oceans to green forests, it's a paradise like no other.",
-        "distance": {
-            "value": 0,
-            "unit": "kilometers"
-        }
+        
+        "tips": "It's hot! Solar shades and protective suits are a must.",
+        "travel_methods": ["Solar Train", "Hoverboard"],
+        "POIs": [
+            {
+                "name": "Caloris Basin",
+                "desc": "The largest impact crater on Mercury offering a breathtaking view.",
+                "image": "my-app/src/data/images/1.png"
+            },
+            {
+                "name": "Shakespeare Quadrangle",
+                "desc": "Named after the famous bard, this region has a complex history.",
+                "image": "my-app/src/data/images/1.png"
+            }
+        ]
     },
     "mars": {
-        "title": "Mars",
-        "desc": "Embark on an adventure to the Red Planet. Explore its rugged terrain, giant volcanoes, and deep canyons. Be a pioneer in humanity's quest for life beyond Earth.",
-        "distance": {
-            "value": 78340000,
-            "unit": "kilometers"
-        }
+        "tips": "Oxygen packs are essential. Don't forget your space rover for traversing the rugged terrains.",
+        "travel_methods": ["Mars Metro", "Jetpack Journeys"],
+        "POIs": [
+            {
+                "name": "Olympus Mons",
+                "desc": "The tallest volcano in the solar system. A hiker's dream!",
+                "image": "my-app/src/data/images/1.png"
+            },
+            {
+                "name": "Valles Marineris",
+                "desc": "A canyon that dwarfs the Grand Canyon of Earth.",
+                "image": "my-app/src/data/images/1.png"
+            }
+        ]
     },
     "jupiter": {
-        "title": "Jupiter",
-        "desc": "Behold the giant of our solar system. With its Great Red Spot and immense storms, its majesty is unparalleled. Float among its 79 moons and experience its magnetic allure.",
-        "distance": {
-            "value": 628730000,
-            "unit": "kilometers"
-        }
+        "tips": "Jupiter is a gas giant. Be sure to bring your gas mask and a warm jacket.",
+        "travel_methods": ["Jupiter Jet", "Jupiter Jump"],
+        "POIs": [
+            {
+                "name": "Great Red Spot",
+                "desc": "A massive storm that has been raging for centuries.",
+                "image": "my-app/src/data/images/1.png"
+            },
+            {
+                "name": "Jupiter's Rings",
+                "desc": "A ring system that is much fainter than Saturn's.",
+                "image": "my-app/src/data/images/1.png"
+            }
+        ]
     },
+
     "saturn": {
-        "title": "Saturn",
-        "desc": "Witness the planet with golden rings. Float amidst its icy rings and gaze upon its many moons. Saturn's beauty will leave you spellbound.",
-        "distance": {
-            "value": 1275000000,
-            "unit": "kilometers"
-        }
+        "tips": "Saturn is a gas giant. Be sure to bring your gas mask and a warm jacket.",
+        "travel_methods": ["Saturn Shuttle", "Saturn Slide"],
+        "POIs": [
+            {
+                "name": "Titan",
+                "desc": "The largest moon of Saturn and the only moon in the solar system with a dense atmosphere.",
+                "image": "my-app/src/data/images/1.png"
+            },
+            {
+                "name": "Enceladus",
+                "desc": "A small moon with a surface that is mostly covered in fresh, clean ice.",
+                "image": "my-app/src/data/images/1.png"
+            }
+        ]
     },
+    
     "uranus": {
-        "title": "Uranus",
-        "desc": "Venture to the ice giant that lies on its side. With its azure blue color and extreme seasons, it's a world of wonders. Delve into the mysteries of this distant planet.",
-        "distance": {
-            "value": 2723950000,
-            "unit": "kilometers"
-        }
+        "tips": "Uranus is a gas giant. Be sure to bring your gas mask and a warm jacket.",
+        "travel_methods": ["Uranus Uber", "Uranus Unicycle"],
+        "POIs": [
+            {
+                "name": "Miranda",
+                "desc": "A small moon with a surface that is mostly covered in fresh, clean ice.",
+                "image": "my-app/src/data/images/1.png"
+            },
+            {
+                "name": "Ariel",
+                "desc": "A small moon with a surface that is mostly covered in fresh, clean ice.",
+                "image": "my-app/src/data/images/1.png"
+            }
+        ]
     },
+
     "neptune": {
-        "title": "Neptune",
-        "desc": "Journey to the last known planet of our solar system. Dive into its deep blue atmosphere, experience fierce winds and watch its dark storms. Truly, a dreamer's paradise.",
-        "distance": {
-            "value": 4351400000,
-            "unit": "kilometers"
-        }
+        "tips": "Neptune is a gas giant. Be sure to bring your gas mask and a warm jacket.",
+        "travel_methods": ["Neptune Navigators", "Neptune Noodle"],
+        "POIs": [
+            {
+                "name": "Triton",
+                "desc": "The largest moon of Neptune and the only moon in the solar system with a dense atmosphere.",
+                "image": "my-app/src/data/images/1.png"
+            },
+            {
+                "name": "Proteus",
+                "desc": "A small moon with a surface that is mostly covered in fresh, clean ice.",
+                "image": "my-app/src/data/images/1.png"
+            }
+        ]
+    },
+
+    "pluto": {
+        "tips": "Pluto is a dwarf planet. Be sure to bring your gas mask and a warm jacket.",
+        "travel_methods": ["Pluto Plane", "Pluto Pogo"],
+        "POIs": [
+            {
+                "name": "Charon",
+                "desc": "The largest moon of Pluto and the only moon in the solar system with a dense atmosphere.",
+                "image": "my-app/src/data/images/1.png"
+            },
+            {
+                "name": "Styx",
+                "desc": "A small moon with a surface that is mostly covered in fresh, clean ice.",
+                "image": "my-app/src/data/images/1.png"
+            }
+        ]
+    },
+
+    "ceres": {
+        "tips": "Ceres is a dwarf planet. Be sure to bring your gas mask and a warm jacket.",
+        "travel_methods": ["Ceres Car", "Ceres Cycle"],
+        "POIs": [
+            {
+                "name": "Occator Crater",
+                "desc": "The largest moon of Ceres and the only moon in the solar system with a dense atmosphere.",
+                "image": "my-app/src/data/images/1.png"
+            },
+            {
+                "name": "Kerwan",
+                "desc": "A small moon with a surface that is mostly covered in fresh, clean ice.",
+                "image": "my-app/src/data/images/1.png"
+            }
+        ]
+    },
+
+    "haumea": {
+        "tips": "Haumea is a dwarf planet. Be sure to bring your gas mask and a warm jacket.",
+        "travel_methods": ["Haumea Hopper", "Haumea Hike"],
+        "POIs": [
+            {
+                "name": "Namaka",
+                "desc": "The largest moon of Haumea and the only moon in the solar system with a dense atmosphere.",
+                "image": "my-app/src/data/images/1.png"
+            },
+            {
+                "name": "Hi'iaka",
+                "desc": "A small moon with a surface that is mostly covered in fresh, clean ice.",
+                "image": "my-app/src/data/images/1.png"
+            }
+        ]
+    },
+
+    "makemake": {
+        "tips": "Makemake is a dwarf planet. Be sure to bring your gas mask and a warm jacket.",
+        "travel_methods": ["Makemake Mobile", "Makemake Moped"],
+        "POIs": [
+            {
+                "name": "S/2015 (136472) 1",
+                "desc": "The largest moon of Makemake and the only moon in the solar system with a dense atmosphere.",
+                "image": "my-app/src/data/images/1.png"
+            },
+            {
+                "name": "S/2015 (136472) 2",
+                "desc": "A small moon with a surface that is mostly covered in fresh, clean ice.",
+                "image": "my-app/src/data/images/1.png"
+            }
+        ]
+    },
+
+    "eris": {
+        "tips": "Eris is a dwarf planet. Be sure to bring your gas mask and a warm jacket.",
+        "travel_methods": ["Eris Express", "Eris Elevator"],
+        "POIs": [
+            {
+                "name": "Dysnomia",
+                "desc": "The largest moon of Eris and the only moon in the solar system with a dense atmosphere.",
+                "image": "my-app/src/data/images/1.png"
+            },
+            {
+                "name": "S/2005 (2003 UB313) 1",
+                "desc": "A small moon with a surface that is mostly covered in fresh, clean ice.",
+                "image": "my-app/src/data/images/1.png"
+            }
+        ]
     }
 }
