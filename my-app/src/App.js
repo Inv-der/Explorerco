@@ -5,12 +5,14 @@ import Itinerary from './Itinerary';
 import planetsData from './data/planets.json';
 import Carousel from './carousel';
 import './App.css';
+import Navbar from './Navbar';
 
 function App() {
   const [selectedPlanet, setSelectedPlanet] = React.useState(null);
 
   return (
     <div className="container">
+      <Navbar />
       <header className="header">
         <h1>Explore the Planets</h1>
       </header>
