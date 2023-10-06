@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import poi from './data/planets.json';
 
 function Itinerary({ planet }) {
-  const [selectedPOIs, setSelectedPOIs] = useState([]);
+    const [selectedPOIs, setSelectedPOIs] = useState([]);
 
-  if (!planet) return <p>Select a planet to plan your itinerary.</p>;
+    if (!planet) return <p>Select a planet to plan your itinerary.</p>;
 
   const handlePOISelection = (poi) => {
     setSelectedPOIs((prev) => [...prev, poi]);

@@ -1,204 +1,128 @@
+[
 {
-    "solar": {
+    "Mars": {
+        "name": "Mars",
+        "description": "Embark on an adventure to the Red Planet. Explore its rugged terrain, giant volcanoes, and deep canyons.",
+        "image": "path/to/mars_image.png",
+        "distance_from_earth": {
+            "value": 78340000,
+            "unit": "kilometers"
+        }
+    },
+    "travel_details": {
+        "departure_date": "2025-04-15",
+        "return_date": "2025-10-10",
+        "journey_duration": {
+            "value": 7,
+            "unit": "months"
+        },
+        "spacecraft": {
+            "name": "Starship 7",
+            "description": "A state-of-the-art spacecraft with advanced life support and entertainment systems.",
+            "image": "path/to/starship_image.png"
+        }
+    },
+    "accommodation": {
+        "name": "Mars Base Alpha",
+        "description": "A luxurious habitat providing all the comforts of home, including panoramic views of the Martian landscape.",
+        "image": "path/to/mars_base_image.png",
+        "amenities": ["Wi-Fi", "Gym", "Observatory", "Greenhouse", "Medical Bay"]
+    },
+    "timetable": [
+        {
+            "day": 1,
+            "activities": ["Arrival at Mars Base Alpha", "Orientation and Safety Briefing"]
+        },
+        {
+            "day": 2,
+            "activities": ["Visit Olympus Mons", "Picnic at Valles Marineris"]
+        }
         
-        "tips": "A vast cosmic journey awaits! Ensure you have essentials and be prepared for long stretches of space travel.",
-        "travel_methods": ["Space Shuttle", "Warp Drive"],
-        "POIs": [
-            {
-                "name": "Asteroid Belt",
-                "desc": "Navigate through a dense region filled with remnants from the formation of the solar system.",
-                "image": "my-app/src/data/images/1.png"
-            },
-            {
-                "name": "Kuiper Belt",
-                "desc": "Journey beyond Neptune and witness the home of the dwarf planets and many comets.",
-                "image": "my-app/src/data/images/1.png"
-            }
-        ]
-    },
-    "mercury": {
+    ],
+    "points_of_interest": [
+        {
+            "name": "Olympus Mons",
+            "description": "The tallest volcano and mountain in the solar system.",
+            "image": "path/to/olympus_mons_image.png"
+        },
+        {
+            "name": "Valles Marineris",
+            "description": "A canyon system that runs along the Martian surface.",
+            "image": "path/to/valles_marineris_image.png"
+        }
         
-        "tips": "It's hot! Solar shades and protective suits are a must.",
-        "travel_methods": ["Solar Train", "Hoverboard"],
-        "POIs": [
-            {
-                "name": "Caloris Basin",
-                "desc": "The largest impact crater on Mercury offering a breathtaking view.",
-                "image": "my-app/src/data/images/1.png"
-            },
-            {
-                "name": "Shakespeare Quadrangle",
-                "desc": "Named after the famous bard, this region has a complex history.",
-                "image": "my-app/src/data/images/1.png"
-            }
-        ]
+    ],
+    "safety_tips": [
+        "Always wear your space suit when outside the habitat.",
+        "Stay hydrated and consume prescribed vitamins.",
+        "Avoid walking alone in unfamiliar terrain."
+    ],
+    "cultural_etiquette": [
+        "Acknowledge Martian Time Zones when scheduling activities.",
+        "Respect designated preservation areas, avoid leaving any trace behind."
+    ],
+    "packing_list": ["Space suit", "UV sunglasses", "Personal medication", "Electronic devices", "Personal diary", "E-books"]
+},
+{
+    "Venus": {
+        "name": "Venus",
+        "description": "Travel to our closest neighboring planet. Experience its thick atmosphere and the mysteries hidden beneath its dense clouds.",
+        "image": "path/to/venus_image.png",
+        "distance_from_earth": {
+            "value": 41400000,
+            "unit": "kilometers"
+        }
     },
-    "mars": {
-        "tips": "Oxygen packs are essential. Don't forget your space rover for traversing the rugged terrains.",
-        "travel_methods": ["Mars Metro", "Jetpack Journeys"],
-        "POIs": [
-            {
-                "name": "Olympus Mons",
-                "desc": "The tallest volcano in the solar system. A hiker's dream!",
-                "image": "my-app/src/data/images/1.png"
-            },
-            {
-                "name": "Valles Marineris",
-                "desc": "A canyon that dwarfs the Grand Canyon of Earth.",
-                "image": "my-app/src/data/images/1.png"
-            }
-        ]
+    "travel_details": {
+        "departure_date": "2026-05-18",
+        "return_date": "2026-11-12",
+        "journey_duration": {
+            "value": 6,
+            "unit": "months"
+        },
+        "spacecraft": {
+            "name": "Venus Voyager 2",
+            "description": "A specialized spacecraft equipped to handle Venus's intense heat and atmospheric pressure.",
+            "image": "path/to/venus_voyager_image.png"
+        }
     },
-    "jupiter": {
-        "tips": "Jupiter is a gas giant. Be sure to bring your gas mask and a warm jacket.",
-        "travel_methods": ["Jupiter Jet", "Jupiter Jump"],
-        "POIs": [
-            {
-                "name": "Great Red Spot",
-                "desc": "A massive storm that has been raging for centuries.",
-                "image": "my-app/src/data/images/1.png"
-            },
-            {
-                "name": "Jupiter's Rings",
-                "desc": "A ring system that is much fainter than Saturn's.",
-                "image": "my-app/src/data/images/1.png"
-            }
-        ]
+    "accommodation": {
+        "name": "Venus Sky Habitat",
+        "description": "A floating habitat suspended within the upper layers of Venus's atmosphere. Experience breathtaking views of the Venusian clouds.",
+        "image": "path/to/venus_habitat_image.png",
+        "amenities": ["Wi-Fi", "Gym", "Observatory Deck", "Research Lab", "Medical Bay"]
     },
-
-    "saturn": {
-        "tips": "Saturn is a gas giant. Be sure to bring your gas mask and a warm jacket.",
-        "travel_methods": ["Saturn Shuttle", "Saturn Slide"],
-        "POIs": [
-            {
-                "name": "Titan",
-                "desc": "The largest moon of Saturn and the only moon in the solar system with a dense atmosphere.",
-                "image": "my-app/src/data/images/1.png"
-            },
-            {
-                "name": "Enceladus",
-                "desc": "A small moon with a surface that is mostly covered in fresh, clean ice.",
-                "image": "my-app/src/data/images/1.png"
-            }
-        ]
-    },
-    
-    "uranus": {
-        "tips": "Uranus is a gas giant. Be sure to bring your gas mask and a warm jacket.",
-        "travel_methods": ["Uranus Uber", "Uranus Unicycle"],
-        "POIs": [
-            {
-                "name": "Miranda",
-                "desc": "A small moon with a surface that is mostly covered in fresh, clean ice.",
-                "image": "my-app/src/data/images/1.png"
-            },
-            {
-                "name": "Ariel",
-                "desc": "A small moon with a surface that is mostly covered in fresh, clean ice.",
-                "image": "my-app/src/data/images/1.png"
-            }
-        ]
-    },
-
-    "neptune": {
-        "tips": "Neptune is a gas giant. Be sure to bring your gas mask and a warm jacket.",
-        "travel_methods": ["Neptune Navigators", "Neptune Noodle"],
-        "POIs": [
-            {
-                "name": "Triton",
-                "desc": "The largest moon of Neptune and the only moon in the solar system with a dense atmosphere.",
-                "image": "my-app/src/data/images/1.png"
-            },
-            {
-                "name": "Proteus",
-                "desc": "A small moon with a surface that is mostly covered in fresh, clean ice.",
-                "image": "my-app/src/data/images/1.png"
-            }
-        ]
-    },
-
-    "pluto": {
-        "tips": "Pluto is a dwarf planet. Be sure to bring your gas mask and a warm jacket.",
-        "travel_methods": ["Pluto Plane", "Pluto Pogo"],
-        "POIs": [
-            {
-                "name": "Charon",
-                "desc": "The largest moon of Pluto and the only moon in the solar system with a dense atmosphere.",
-                "image": "my-app/src/data/images/1.png"
-            },
-            {
-                "name": "Styx",
-                "desc": "A small moon with a surface that is mostly covered in fresh, clean ice.",
-                "image": "my-app/src/data/images/1.png"
-            }
-        ]
-    },
-
-    "ceres": {
-        "tips": "Ceres is a dwarf planet. Be sure to bring your gas mask and a warm jacket.",
-        "travel_methods": ["Ceres Car", "Ceres Cycle"],
-        "POIs": [
-            {
-                "name": "Occator Crater",
-                "desc": "The largest moon of Ceres and the only moon in the solar system with a dense atmosphere.",
-                "image": "my-app/src/data/images/1.png"
-            },
-            {
-                "name": "Kerwan",
-                "desc": "A small moon with a surface that is mostly covered in fresh, clean ice.",
-                "image": "my-app/src/data/images/1.png"
-            }
-        ]
-    },
-
-    "haumea": {
-        "tips": "Haumea is a dwarf planet. Be sure to bring your gas mask and a warm jacket.",
-        "travel_methods": ["Haumea Hopper", "Haumea Hike"],
-        "POIs": [
-            {
-                "name": "Namaka",
-                "desc": "The largest moon of Haumea and the only moon in the solar system with a dense atmosphere.",
-                "image": "my-app/src/data/images/1.png"
-            },
-            {
-                "name": "Hi'iaka",
-                "desc": "A small moon with a surface that is mostly covered in fresh, clean ice.",
-                "image": "my-app/src/data/images/1.png"
-            }
-        ]
-    },
-
-    "makemake": {
-        "tips": "Makemake is a dwarf planet. Be sure to bring your gas mask and a warm jacket.",
-        "travel_methods": ["Makemake Mobile", "Makemake Moped"],
-        "POIs": [
-            {
-                "name": "S/2015 (136472) 1",
-                "desc": "The largest moon of Makemake and the only moon in the solar system with a dense atmosphere.",
-                "image": "my-app/src/data/images/1.png"
-            },
-            {
-                "name": "S/2015 (136472) 2",
-                "desc": "A small moon with a surface that is mostly covered in fresh, clean ice.",
-                "image": "my-app/src/data/images/1.png"
-            }
-        ]
-    },
-
-    "eris": {
-        "tips": "Eris is a dwarf planet. Be sure to bring your gas mask and a warm jacket.",
-        "travel_methods": ["Eris Express", "Eris Elevator"],
-        "POIs": [
-            {
-                "name": "Dysnomia",
-                "desc": "The largest moon of Eris and the only moon in the solar system with a dense atmosphere.",
-                "image": "my-app/src/data/images/1.png"
-            },
-            {
-                "name": "S/2005 (2003 UB313) 1",
-                "desc": "A small moon with a surface that is mostly covered in fresh, clean ice.",
-                "image": "my-app/src/data/images/1.png"
-            }
-        ]
-    }
+    "timetable": [
+        {
+            "day": 1,
+            "activities": ["Arrival at Venus Sky Habitat", "Orientation and Safety Briefing"]
+        },
+        {
+            "day": 2,
+            "activities": ["Explore Venusian Cloud Formations", "Study Atmospheric Phenomena"]
+        }
+    ],
+    "points_of_interest": [
+        {
+            "name": "Maxwell Montes",
+            "description": "The highest mountain range on Venus.",
+            "image": "path/to/maxwell_montes_image.png"
+        },
+        {
+            "name": "Aphrodite Terra",
+            "description": "The largest highland region on Venus.",
+            "image": "path/to/aphrodite_terra_image.png"
+        }
+    ],
+    "safety_tips": [
+        "Ensure protective gear is worn at all times due to extreme temperatures.",
+        "Stay within marked zones in the habitat.",
+        "Avoid direct exposure to the sun."
+    ],
+    "cultural_etiquette": [
+        "Remember to mark Venus Day which lasts longer than a Venusian year.",
+        "Respect the scientific protocols set in place to protect any potential life forms."
+    ],
+    "packing_list": ["Heat-resistant suit", "UV sunglasses", "Personal medication", "Electronic devices", "Personal diary", "Educational materials about Venus"]
 }
+]
