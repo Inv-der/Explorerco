@@ -2,12 +2,12 @@
     
     "mercury": {
         "title": "Mercury",
-        "desc": "Venture to the closest planet to the Sun. With scorching days and freezing nights, it's a world of extremes. Marvel at sunrise and sunset on the same horizon!",
+        "desc": "Mercury is the closest planet to the Sun and is known for its extreme temperature variations, with scorching hot days and freezing nights.        ",
         "distance": {
-            "value": 91690000,
-            "unit": "kilometers"
+            "value": 0.39 ,
+            "unit": "AU"
         },
-        "tips":"tips",
+        "tips":"Protect against extreme heat with advanced cooling systems in your spacesuit.        ",
         "travel_methods":{
             "1":"Travel by car",
             "2":"Travel by train",
@@ -16,8 +16,8 @@
         "image": "/planets/mercuryn.webp",
         "points_of_interest": [
             {
-                "name":"hi",
-                "desc":"hi",
+                "name":"Caloris Basin",
+                "desc":" A large impact crater with intriguing geological features.",
                 "image":"my-app/src/data/images/1.png"
             },
             {
@@ -30,12 +30,12 @@
     
     "venus":{
         "title": "Venus",
-        "desc": "Venture to the closest planet to the Sun. With scorching days and freezing nights, it's a world of extremes. Marvel at sunrise and sunset on the same horizon!",
+        "desc": "Venus is often called Earth's sister planet due to its similar size and composition, but it has a thick, toxic atmosphere and a blistering surface temperature. ",
         "distance": {
-            "value": 91690000,
-            "unit": "kilometers"
+            "value":  0.72,
+            "unit": "AU"
         },
-        "tips":"tips",
+        "tips":" Use specially designed spacecraft to withstand the extreme heat and pressure.",
         "travel_methods":{
             "1":"Travel by car",
             "2":"Travel by train",
@@ -44,8 +44,8 @@
         "image": "my-app/src/data/images/1.png",
         "points_of_interest": [
             {
-                "name":"hi",
-                "desc":"hi",
+                "name":"Ishtar Terra",
+                "desc":"A highland region with vast mountains and unique geological formations. ",
                 "image":"my-app/src/data/images/1.png"
             },
             {
@@ -54,7 +54,168 @@
                 "image":"my-app/src/data/images/1.png"
             }
         ]
+    },
+    "Earth": {
+        "title": "Earth",
+        "desc": " Earth is the only known planet to support life, with a diverse range of ecosystems, abundant water, and a hospitable climate.",
+        "distance": {
+            "value": 1,
+            "unit": "AU"
+        },
+        "tips":"Explore diverse ecosystems and cultures. ",
+        "travel_methods":{
+            "1":"Travel by car",
+            "2":"Travel by train",
+            "3":"Travel by plane"
+        },
+        "image": "/planets/mercuryn.webp",
+        "points_of_interest": [
+            {
+                "name":"The Great Barrier Reef",
+                "desc":"The Great Barrier Reef in Australia for incredible marine life and coral reefs.        ",
+                "image":"my-app/src/data/images/1.png"
+            },
+            {
+                "name":"hi2",
+                "desc":"hiw",
+                "image":"my-app/src/data/images/1.png"
+            }
+        ]
+    },
+    "Mars": {
+        "title": "Mars",
+        "desc": "Mars, often referred to as the Red Planet is known for its reddish appearance and has been a target for exploration to search for signs of past or present life.",
+        "distance": {
+            "value": 1.52,
+            "unit": "AU"
+        },
+        "tips":"Prepare for long-duration space travel and bring supplies for survival.",
+        "travel_methods":{
+            "1":"Travel by car",
+            "2":"Travel by train",
+            "3":"Travel by plane"
+        },
+        "image": "/planets/mercuryn.webp",
+        "points_of_interest": [
+            {
+                "name":"Olympus Mons ",
+                "desc":"The largest volcano in the solar system, with stunning views from its summit.",
+                "image":"my-app/src/data/images/1.png"
+            },
+            {
+                "name":"hi2",
+                "desc":"hiw",
+                "image":"my-app/src/data/images/1.png"
+            }
+        ]
+    },
+    "Jupiter": {
+        "title": "Jupiter",
+        "desc": "Jupiter is the largest planet in our solar system, known for its immense size and powerful storms, including the famous Great Red Spot.",
+        "distance": {
+            "value": 5.20,
+            "unit": "AU"
+        },
+        "tips":"Stay far away from Jupiter's violent storms; visit its moons instead.",
+        "travel_methods":{
+            "1":"Travel by car",
+            "2":"Travel by train",
+            "3":"Travel by plane"
+        },
+        "image": "/planets/mercuryn.webp",
+        "points_of_interest": [
+            {
+                "name":"Europa",
+                "desc":"Explore the subsurface ocean beneath its icy crust for signs of life.",
+                "image":"my-app/src/data/images/1.png"
+            },
+            {
+                "name":"hi2",
+                "desc":"hiw",
+                "image":"my-app/src/data/images/1.png"
+            }
+        ]
+    },
+    "Saturn": {
+        "title": "Saturn",
+        "desc": "Saturn is recognized by its striking ring system, which consists of numerous icy and rocky particles encircling the planet.",
+        "distance": {
+            "value": 9.58,
+            "unit": "AU"
+        },
+        "tips":"Enjoy the view of Saturn's majestic rings from a safe distance",
+        "travel_methods":{
+            "1":"Travel by car",
+            "2":"Travel by train",
+            "3":"Travel by plane"
+        },
+        "image": "/planets/mercuryn.webp",
+        "points_of_interest": [
+            {
+                "name":"Titan",
+                "desc":"Study its unique atmosphere and hydrocarbon lakes and rivers.",
+                "image":"my-app/src/data/images/1.png"
+            },
+            {
+                "name":"hi2",
+                "desc":"hiw",
+                "image":"my-app/src/data/images/1.png"
+            }
+        ]
+    },
+    "Uranus": {
+        "title": "Uranus",
+        "desc": "Uranus is a gas giant with a unique feature: it rotates on its side, making it appear to roll along its orbit." ,
+        "distance": {
+            "value":19.18,
+            "unit": "AU"
+        },
+        "tips":"Embrace the challenges of a remote study, as Neptune offers limited surface exploration possibilities.",
+        "travel_methods":{
+            "1":"Travel by car",
+            "2":"Travel by train",
+            "3":"Travel by plane"
+        },
+        "image": "/planets/mercuryn.webp",
+        "points_of_interest": [
+            {
+                "name":"Miranda",
+                "desc":"The most heavily cratered moon with diverse geological features.",
+                "image":"my-app/src/data/images/1.png"
+            },
+            {
+                "name":"hi2",
+                "desc":"hiw",
+                "image":"my-app/src/data/images/1.png"
+            }
+        ]
+    },
+    "Neptune": {
+        "title": "Neptune",
+        "desc": "Neptune is the farthest known planet from the Sun and is characterized by its deep blue color and powerful winds, including the Great Dark Spot.",
+        "distance": {
+            "value":30.05,
+            "unit": "AU"
+        },
+        "tips":" Embrace the challenges of a remote study, as Neptune offers limited surface exploration possibilities.",
+        "travel_methods":{
+            "1":"Travel by car",
+            "2":"Travel by train",
+            "3":"Travel by plane"
+        },
+        "image": "/planets/mercuryn.webp",
+        "points_of_interest": [
+            {
+                "name":"Triton",
+                "desc":"Observe the geysers and unique nitrogen-ice terrain on this moon.",
+                "image":"my-app/src/data/images/1.png"
+            },
+            {
+                "nae":"hi2",
+                "desc":"hiw",
+                "image":"my-app/src/data/images/1.png"
+            }
+        ]
     }
-
-
+    
     }
