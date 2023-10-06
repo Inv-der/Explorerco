@@ -13,13 +13,14 @@ function App() {
   return (
     <div className="container">
       <Navbar />
-      <header className="header">
-        <h1>Explore the Planets</h1>
-      </header>
+
+      {/* Add some spacing between Navbar and Header */}
+      <div className="header" style={{ marginTop: '20px' }}>
+        <h1>Exploring on a golden journey</h1>
+      </div>
 
       {/* New Carousel Component with Videos */}
       <Carousel />
-
 
       {/* Navigation Component */}
       <div className="navigation">

@@ -1,45 +1,35 @@
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
+import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 
-function NavScrollExample() {
+function CoolNavbar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" bg="dark" variant="dark">
       <Container fluid>
-        {/* Replace the text with an Image */}
         <Navbar.Brand href="#">
           <Image
-            src="path/to/your/image.png"  // Replace with the path to your image
+            src="path/to/your/image.png"
             alt="INV@DER$"
-            style={{ maxHeight: '30px' }}  // Set the maximum height of the image
+            style={{ maxHeight: '30px' }}
           />
+          {' '}INV@DER$
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
+          <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">Link</Nav.Link>
+            <NavDropdown title="Dropdown" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action5">Something else here</NavDropdown.Item>
             </NavDropdown>
-            {/* <Nav.Link href="#" disabled>
-              Link
-            </Nav.Link> enable to add more links */}
           </Nav>
           <Form className="d-flex">
             <Form.Control
@@ -48,7 +38,7 @@ function NavScrollExample() {
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">Search</Button>
+            <Button variant="outline-light">Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
@@ -56,4 +46,4 @@ function NavScrollExample() {
   );
 }
 
-export default NavScrollExample;
+export default CoolNavbar;
