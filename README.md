@@ -1,4 +1,4 @@
-# Exploring the Solar System
+# Exploring the Solar System: Explorer'n'Co
 
 Welcome to the "Exploring the Solar System" project! This React-based application provides users with a beautiful journey through the solar system, showcasing planets, their features, and providing useful travel tips.
 
@@ -22,7 +22,7 @@ _Note: Replace the path with an actual screenshot of your application if availab
 
 2. **Install Dependencies**:
     ```bash
-    npm install
+    npm i
     ```
 
 3. **Run the Application**:
@@ -42,10 +42,9 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 ## Contributors
 
-- [Your Name](https://github.com/your-github-username)
-- [Contributor 1's Name](https://github.com/contributor1-github-username)
-- [Contributor 2's Name](https://github.com/contributor2-github-username)
-... _add other contributor's links here_
+- [Arun K Nair]([https://github.com/your-github-username](https://github.com/AKN414-IND))
+- [Arun Krishnadas]([https://github.com/contributor1-github-username](https://github.com/ArunKrishnadas))
+- [Abhijith Suresh]([https://github.com/contributor2-github-username](https://github.com/YoungGuy2003))
 
 ## License
 
