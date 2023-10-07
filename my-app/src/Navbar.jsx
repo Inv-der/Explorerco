@@ -52,7 +52,7 @@ function CoolNavbar({ onSelectPlanet }) {
           <Image src='\planets\bird_2-removebg-preview.png' alt="Logo" style={{ height: '100px', width: '100px' }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
+        <Navbar.Collapse id="navbarScroll" style={{ paddingRight: '50px' }}>
           <Nav className="ms-auto" style={{ maxHeight: '100px' }} navbarScroll>
             <Nav.Link as={Link} to="/">
               Home
@@ -69,6 +69,9 @@ function CoolNavbar({ onSelectPlanet }) {
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action5">Something else here</NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link as={Link} to="/about">
+              About
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

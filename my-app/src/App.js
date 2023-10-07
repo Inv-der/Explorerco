@@ -8,6 +8,7 @@ import './App.css';
 import Navbar from './Navbar';
 import SpaceTourismBooking from './SpaceTravelBooking.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import About from './About';
 
 function App() {
   const [selectedPlanet, setSelectedPlanet] = React.useState(null);
@@ -19,7 +20,7 @@ function App() {
       setSelectedPlanet(planetKey);  // Select the planet
     }
   };
-
+  
   return (
     <Router>
       <div>
@@ -35,6 +36,7 @@ function App() {
           <Route path="/booking" element={<SpaceTourismBooking />} />
           <Route path="/planet-info/:planetName" element={<PlanetInfo />} />
           <Route path="/itinerary" element={<Itinerary />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
     </Router>
