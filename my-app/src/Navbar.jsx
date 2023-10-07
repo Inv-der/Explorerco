@@ -48,7 +48,7 @@ function CoolNavbar({ onSelectPlanet }) {
     >
       <Container fluid>
       <Navbar.Brand as={Link} to="/">
-          <Image src='\planets\bird_2-removebg-preview.png' alt="Logo" style={{ height: '100x`x`px', width: 'auto' }} />
+          <Image src='\planets\bird_2-removebg-preview.png' alt="Logo" style={{ height: '100px', width: '100px' }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
