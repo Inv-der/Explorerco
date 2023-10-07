@@ -4,8 +4,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import planetsData from './data/planets.json';
 import './Navbar.css';
@@ -75,8 +73,14 @@ function CoolNavbar({ onSelectPlanet }) {
       onMouseMove={handleNavbarMouseMove}
     >
       <Container fluid>
-      <Navbar.Brand as={Link} to="/">
-          <Image src='\planets\bird_2-removebg-preview.png' alt="Logo" style={{ height: '100px', width: 'auto' }} />
+        <Navbar.Brand
+          as={Link}
+          to="/"
+          className="logo"
+          onMouseEnter={handleLogoMouseEnter}
+          onMouseLeave={handleLogoMouseLeave}
+        >
+          <Image src='\planets\bird_2-removebg-preview.png' alt="Logo" style={{ height: '100px', width: '100px' }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll" style={{ paddingRight: '50px' }}>
@@ -99,10 +103,13 @@ function CoolNavbar({ onSelectPlanet }) {
             >
               Book
             </Nav.Link>
-            <Nav.Link as={Link} to="/about">
-              about
-            </Nav.Link>
-            <NavDropdown title="Dropdown" id="navbarScrollingDropdown">
+            <NavDropdown
+              title="Planets"
+              id="navbarScrollingDropdown"
+              className='white-text'
+              onMouseEnter={handleDropdownMouseEnter}
+              onMouseLeave={handleDropdownMouseLeave}
+            >
               {Object.keys(planetsData).map((planetKey) => (
                 <NavDropdown.Item key={planetKey} as={Link} to={`/planet-info/${planetKey}`}>
                   {planetsData[planetKey].title}
