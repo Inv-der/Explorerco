@@ -14,7 +14,7 @@ function CoolNavbar({ onSelectPlanet }) {
   const [rocketPosition, setRocketPosition] = useState({ x: 0, y: 0 });
 
   const handleMouseEnter = () => {
-    setRocketVisible(true);
+    setRocketVisible(true); 
   };
 
   const handleMouseLeave = () => {
