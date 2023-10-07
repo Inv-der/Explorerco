@@ -1,5 +1,4 @@
-import React from 'react';
-import Navigation from './Navigation';
+import React, { useState, useEffect } from 'react'; // Import useState and useEffect
 import PlanetInfo from './PlanetInfo';
 import Itinerary from './Itinerary';
 import planetsData from './data/planets.json';
@@ -10,38 +9,52 @@ import SpaceTourismBooking from './SpaceTravelBooking.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './About';
 
+import LoginComponent from "./components/LoginComponent";
+import ProtectedPage from "./components/ProtectedPage";
+import { auth } from './config/firebase.js';
 
 function App() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      setUser(user);
+    });
+
+    return () => {
+      unsubscribe();
+    };
+  }, []);
+  
   const [selectedPlanet, setSelectedPlanet] = React.useState(null);
 
   const handleSelectPlanet = (planetKey) => {
     if (selectedPlanet === planetKey) {
-      setSelectedPlanet(null);  // Deselect if the planet is already selected
+      setSelectedPlanet(null);
     } else {
-      setSelectedPlanet(planetKey);  // Select the planet
+      setSelectedPlanet(planetKey);
     }
   };
 
   return (
     <Router>
       <div>
-        {/* Move Navbar outside the entire component */}
         <Navbar onSelectPlanet={handleSelectPlanet} />
       </div>
       <div className="container">
-      <div class="card text-center" style={{ borderRadius: '50px' }}>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+        <div className="card text-center" style={{ borderRadius: '50px' }}>
+          <div className="card-body">
+            <h5 className="card-title">Special title treatment</h5>
+            <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" className="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
 
         <Routes>
           <Route path="/" element={<Carousel />} />
+          <Route path="/login" element={<LoginComponent />} />
           <Route path="/booking" element={<SpaceTourismBooking />} />
           <Route path="/planet-info/:planetName" element={<div><PlanetInfo /></div>} />
-         
           <Route path="/about" element={<About />} />
         </Routes>
       </div>
@@ -50,4 +63,3 @@ function App() {
 }
 
 export default App;
-  
