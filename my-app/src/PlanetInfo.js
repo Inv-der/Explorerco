@@ -1,8 +1,13 @@
 import React from 'react';
 import './PlanetInfo.css'; 
+import planetsData from './data/planets.json';
+import { useParams } from 'react-router-dom';
 
-function PlanetInfo({ planet }) {
-    if (!planet) return <p>Select a planet to view details.</p>;
+function PlanetInfo() {
+    const { planetName } = useParams();
+    const planet = planetsData[planetName];
+
+    if (!planet) return <p>Planet not found!</p>;
 
     return (
         <div className="container">

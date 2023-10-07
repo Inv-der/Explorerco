@@ -7,6 +7,8 @@ import Carousel from './carousel';
 import './App.css';
 import Navbar from './Navbar';
 import SpaceTourismBooking from './SpaceTravelBooking.js';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 function App() {
   const [selectedPlanet, setSelectedPlanet] = React.useState(null);
 
@@ -19,36 +21,21 @@ function App() {
   };
 
   return (
-    <div><Navbar onSelectPlanet={handleSelectPlanet} />
-
-    <div className="container">
-    
-
-      {/* New Carousel Component with Videos */}
-      {/*<Carousel />*/}
-
-      {/* Space Tourism Booking Component */}
-      <SpaceTourismBooking />
-
-      {/* Navigation Component (if needed) */}
-      {/*<div className="navigation">
-         <Navigation onSelectPlanet={handleSelectPlanet} />
-      </div>*/}
-
-      {/* Planet Information and Itinerary */}
-      {selectedPlanet && (
-        <div>
-          <div className="planet-info">
-            <PlanetInfo planet={planetsData[selectedPlanet]} />
-          </div>
-          <div className="itinerary">
-            <Itinerary planet={planetsData[selectedPlanet]} />
-          </div>
+        <div className="container">
+            <Router>
+                <Navbar onSelectPlanet={handleSelectPlanet} />
+                <div className="header" style={{ marginTop: '20px' }}>
+                    <h1>Exploring on a golden journey</h1>
+                </div>
+                <Routes>
+                    <Route path="/" element={<Carousel />} />
+                    <Route path="/booking" element={<SpaceTourismBooking />} />
+                    <Route path="/planet-info/:planetName" element={<PlanetInfo />} />
+                    <Route path="/itinerary" element={<Itinerary />} />
+                </Routes>
+            </Router>
         </div>
-      )}
-    </div>
-    </div>
-  );
+    );
 }
 
 export default App;
