@@ -9,10 +9,13 @@ function PlanetInfo() {
 
   if (!planet) return <p>Planet not found!</p>;
 
+  const commonHeadingStyle = { color: 'white', fontSize: '25px' };
+  const commonParagraphStyle = { color: 'white', fontSize: '20px' };
+
   return (
     <div className="container">
       <button className="animated-button">
-        <span>{planet.title}</span>
+        <span style={commonHeadingStyle}>{planet.title}</span>
         <span></span>
       </button>
       <div style={{ position: 'relative', marginBottom: '20px' }}>
@@ -25,22 +28,21 @@ function PlanetInfo() {
                     allowFullScreen
     ></iframe>*/}
       </div>
-      <p style={{ color: 'white' }}>{planet.desc}</p>
-
+      <p style={commonParagraphStyle}>{planet.desc}</p>
 
       {planet.distance && (
-        <p style={{ color: 'white' }}>
+        <p style={commonParagraphStyle}>
           Distance: {planet.distance.value} {planet.distance.unit}
         </p>
       )}
 
-      <h4>Travel Tips:</h4>
-      <p style={{ color: 'white' }}>{planet.tips}</p>
+      <h4 style={commonHeadingStyle}>Travel Tips:</h4>
+      <p style={commonParagraphStyle}>{planet.tips}</p>
 
       {planet.travel_methods && (
         <>
-          <h4>Available Travel Methods:</h4>
-          <ul>
+          <h4 style={commonHeadingStyle}>Available Travel Methods:</h4>
+          <ul style={commonParagraphStyle}>
             {Object.values(planet.travel_methods).map((method, index) => (
               <li key={index}>{method}</li>
             ))}
@@ -50,8 +52,8 @@ function PlanetInfo() {
 
       {planet.points_of_interest && (
         <>
-          <h4>Points of Interest:</h4>
-          <ul>
+          <h4 style={commonHeadingStyle}>Points of Interest:</h4>
+          <ul style={commonParagraphStyle}>
             {planet.points_of_interest.map((poi, index) => (
               <li key={index}>
                 <strong>Name:</strong> {poi.name}

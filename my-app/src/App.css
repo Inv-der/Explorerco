@@ -96,6 +96,9 @@ body {
   opacity: .5; /* Reduced opacity after button */
   transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
 }
+.card {
+  border-radius: 15px; /* You can adjust the value according to your preference */
+}
 
 
 

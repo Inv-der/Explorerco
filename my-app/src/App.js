@@ -28,9 +28,14 @@ function App() {
         <Navbar onSelectPlanet={handleSelectPlanet} />
       </div>
       <div className="container">
-        <div className="header" style={{ marginTop: '20px' }}>
-          <h1>Exploring on a golden journey</h1>
-        </div>
+      <div class="card text-center" style={{ borderRadius: '50px' }}>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
         <Routes>
           <Route path="/" element={<Carousel />} />
           <Route path="/booking" element={<SpaceTourismBooking />} />
@@ -44,3 +49,4 @@ function App() {
 }
 
 export default App;
+  
