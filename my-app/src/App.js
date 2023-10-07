@@ -1,5 +1,5 @@
 import React from 'react';
-import Navigation from './Navigation';
+/*import Navigation from './Navigation';*/
 import PlanetInfo from './PlanetInfo';
 import Itinerary from './Itinerary';
 import planetsData from './data/planets.json';
@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="container">
-      <Navbar />
+      <Navbar onSelectPlanet={handleSelectPlanet}  />
 
       {/* Add some spacing between Navbar and Header */}
       <div className="header" style={{ marginTop: '20px' }}>
@@ -31,10 +31,10 @@ function App() {
       <Carousel />
 
       {/* Navigation Component */}
-      
-      <div className="navigation">
+
+      {/*<div className="navigation">
       <Navigation onSelectPlanet={handleSelectPlanet} />
-    </div>
+    </div>*/}
 
       {/* Planet Information and Itinerary */}
       {selectedPlanet && (
