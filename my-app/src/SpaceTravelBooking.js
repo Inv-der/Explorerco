@@ -1,55 +1,121 @@
-import React, { useState } from 'react';
-import './SpaceTourismBooking.css';  // Create a CSS file for styles
+import React, { useState } from "react";
+import planetsData from "./data/planets.json";
 
 function SpaceTourismBooking() {
-    const [journeyType, setJourneyType] = useState('oneWay');
-    const [launchFrom, setLaunchFrom] = useState('');
-    const [destination, setDestination] = useState('');
-    const [departureDate, setDepartureDate] = useState('');
+  const [bookingType, setBookingType] = useState("Round Trip");
+  const [fromCity, setFromCity] = useState("");
+  const [toCity, setToCity] = useState("");
+  const [departureDate, setDepartureDate] = useState("");
+  const [returnDate, setReturnDate] = useState("");
+  const [travelby, setTravelby] = useState("");
 
-    return (
-        <div className="space-tourism-booking">
-            <div className="navbar">
-                <div>Flights</div>
-                <div>Hotels</div>
-                <div>Homestays & Villas</div>
-                {/* Add other navbar items */}
-            </div>
 
-            <div className="booking-panel">
-                <div className="journey-type">
-                    <label>
-                        <input type="radio" value="oneWay" checked={journeyType === 'oneWay'} onChange={() => setJourneyType('oneWay')} />
-                        One Way
-                    </label>
-                    <label>
-                        <input type="radio" value="roundTrip" checked={journeyType === 'roundTrip'} onChange={() => setJourneyType('roundTrip')} />
-                        Round Trip
-                    </label>
-                    {/* Add other options */}
-                </div>
-                <div className="from-to-section">
-                    <div>
-                        <label>From</label>
-                        <input type="text" value={launchFrom} onChange={e => setLaunchFrom(e.target.value)} placeholder="Launch from" />
-                    </div>
-                    <div>
-                        <label>To</label>
-                        <input type="text" value={destination} onChange={e => setDestination(e.target.value)} placeholder="Destination" />
-                    </div>
-                </div>
-                <div>
-                    <label>Departure</label>
-                    <input type="date" value={departureDate} onChange={e => setDepartureDate(e.target.value)} />
-                </div>
-                <button>Explore</button>
-            </div>
+  const handleSearchClick = () => {
+    if (fromCity && toCity && departureDate) {
+      alert("Search Initiated!");
+    } else {
+      alert("Please complete the form before searching.");
+    }
+  };
 
-            <div className="info-bar">
-                Book International and Domestic Space Journeys
-            </div>
-        </div>
-    );
+  return (
+    <div>
+      <h2>Book International and Domestic Flights</h2>
+
+      <div>
+        <label>
+          <input
+            type="radio"
+            value="One Way"
+            checked={bookingType === "One Way"}
+            onChange={() => setBookingType("One Way")}
+          />
+          One Way
+        </label>
+        <label>
+          <input
+            type="radio"
+            value="Round Trip"
+            checked={bookingType === "Round Trip"}
+            onChange={() => setBookingType("Round Trip")}
+          />
+          Round Trip
+        </label>
+        <label>
+          <input
+            type="radio"
+            value="Multi City"
+            checked={bookingType === "Multi City"}
+            onChange={() => setBookingType("Multi City")}
+          />
+          Multi City
+        </label>
+      </div>
+
+      <label>
+        From:
+        <select value={fromCity} onChange={(e) => setFromCity(e.target.value)}>
+          <option value="">Select...</option>
+          {Object.entries(planetsData).map(([key, planet]) => (
+            <option key={key} value={key}>
+              {planet.title}
+            </option>
+          ))}
+        </select>
+      </label>
+
+      <label>
+        To:
+        <select value={toCity} onChange={(e) => setToCity(e.target.value)}>
+          <option value="">Select...</option>
+          {Object.entries(planetsData)
+            .filter(([key]) => key !== fromCity)
+            .map(([key, planet]) => (
+              <option key={key} value={key}>
+                {planet.title}
+              </option>
+            ))}
+        </select>
+      </label>
+
+      <label>
+        By:
+        <select value={travelby} onChange={(e) => setTravelby(e.target.value)}>
+          <option value="">Select...</option>
+          {fromCity &&
+            Object.values(planetsData[fromCity].travel_methods).map(
+              (method, index) => (
+                <option key={index} value={method}>
+                  {method}
+                </option>
+              )
+            )}
+        </select>
+      </label>
+
+      <label>
+        Departure date:
+        <input
+          type="date"
+          value={departureDate}
+          onChange={(e) => setDepartureDate(e.target.value)}
+        />
+      </label>
+
+      {bookingType === "Round Trip" && (
+        <label>
+          Return date:
+          <input
+            type="date"
+            value={returnDate}
+            onChange={(e) => setReturnDate(e.target.value)}
+          />
+        </label>
+      )}
+
+      <button onClick={handleSearchClick}>SEARCH</button>
+    </div>
+  );
 }
 
 export default SpaceTourismBooking;
