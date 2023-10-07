@@ -18,12 +18,27 @@ function Itinerary({ planet }) {
         selectedPOIs.forEach(poi => {
             htmlContent += `<p>${poi.name} Visited: [ ]</p>`;
         });
-
+    
         const blob = new Blob([htmlContent], { type: 'text/html' });
-        const url = window.URL.createObjectURL(blob);
-        window.open(url, "_blank");
+        const href = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = href;
+        link.download = 'bucket_list.html';
+        
+        // Append the link to the DOM
+        document.body.appendChild(link);
+    
+        // Trigger a click event on the link
+        link.click();
+    
+        // Delay the removal of the link for browser compatibility
+        setTimeout(() => {
+            document.body.removeChild(link);
+            // Release the blob URL
+            URL.revokeObjectURL(href);
+        }, 100);
     };
-
+    
         
       
     return (
