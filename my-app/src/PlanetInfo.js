@@ -11,7 +11,10 @@ function PlanetInfo() {
 
     return (
         <div className="container">
-            <h1>{planet.title}</h1>
+            <button class="animated-button">
+  <span>{planet.title}</span>
+  <span></span>
+</button>
             <div style={{ position: 'relative', marginBottom: '20px' }}>
                {/* <iframe 
                     src={planet.image}
