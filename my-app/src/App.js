@@ -8,6 +8,7 @@ import Navbar from './Navbar';
 import SpaceTourismBooking from './SpaceTravelBooking.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './About';
+import RegistrationComponent from './components/RegistrationComponent';
 
 import LoginComponent from "./components/LoginComponent";
 import ProtectedPage from "./components/ProtectedPage";
@@ -51,6 +52,7 @@ function App() {
         </div>
 
         <Routes>
+          <Route path='/register' element={<RegistrationComponent />} />
           <Route path="/" element={<Carousel />} />
           <Route path="/login" element={<LoginComponent />} />
           <Route path="/booking" element={<SpaceTourismBooking />} />
