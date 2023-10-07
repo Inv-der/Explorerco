@@ -1,0 +1,62 @@
+/* About.css */
+
+.about-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #464343; /* Set the text color to white */
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  h2 {
+    color: #555;
+    margin-top: 20px;
+  }
+  
+  p {
+    color: #777;
+    line-height: 1.5;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .team-member {
+    flex: 1;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #333;
+  }
+  
+  .team-member h3 {
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .team-member p {
+    color: #777;
+  }
+  
+  /* Add any additional CSS styling as needed */
+  

@@ -48,7 +48,7 @@ function CoolNavbar({ onSelectPlanet }) {
     >
       <Container fluid>
       <Navbar.Brand as={Link} to="/">
-          <Image src='\planets\bird_2-removebg-preview.png' alt="Logo" style={{ height: '100x`x`px', width: 'auto' }} />
+          <Image src='\planets\bird_2-removebg-preview.png' alt="Logo" style={{ height: '100px', width: 'auto' }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -58,6 +58,9 @@ function CoolNavbar({ onSelectPlanet }) {
             </Nav.Link>
             <Nav.Link as={Link} to="/booking">
               Book
+            </Nav.Link>
+            <Nav.Link as={Link} to="/about">
+              about
             </Nav.Link>
             <NavDropdown title="Dropdown" id="navbarScrollingDropdown">
               {Object.keys(planetsData).map((planetKey) => (
