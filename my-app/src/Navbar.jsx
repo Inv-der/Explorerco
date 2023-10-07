@@ -8,6 +8,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import planetsData from './data/planets.json';
+import './Navbar.css';
 
 function CoolNavbar({ onSelectPlanet }) {
   const [rocketVisible, setRocketVisible] = useState(false);
@@ -34,13 +35,40 @@ function CoolNavbar({ onSelectPlanet }) {
     // Handle rocket-specific mouse move events here
   };
 
+  // Event handlers for logo and buttons
+  const handleLogoMouseEnter = () => {
+    setRocketVisible(false);
+  };
+
+  const handleButtonMouseEnter = () => {
+    setRocketVisible(false);
+  };
+
+  const handleLogoMouseLeave = () => {
+    setRocketVisible(true);
+  };
+
+  const handleButtonMouseLeave = () => {
+    setRocketVisible(true);
+  };
+
+  // Event handlers for dropdown
+  const handleDropdownMouseEnter = () => {
+    setRocketVisible(false);
+  };
+
+  const handleDropdownMouseLeave = () => {
+    setRocketVisible(true);
+  };
+
   return (
     <Navbar
-      expand="lg" 
+      expand="lg"
       variant="dark"
       style={{
         height: '80px',
         position: 'relative',
+        cursor: rocketVisible ? 'none' : 'auto',
       }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -51,12 +79,24 @@ function CoolNavbar({ onSelectPlanet }) {
           <Image src='\planets\bird_2-removebg-preview.png' alt="Logo" style={{ height: '100px', width: 'auto' }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
-            <Nav.Link as={Link} to="/">
+        <Navbar.Collapse id="navbarScroll" style={{ paddingRight: '50px' }}>
+          <Nav className="ms-auto" style={{ maxHeight: '100px' }} navbarScroll>
+            <Nav.Link
+              as={Link}
+              to="/"
+              className="white-text"
+              onMouseEnter={handleButtonMouseEnter}
+              onMouseLeave={handleButtonMouseLeave}
+            >
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/booking">
+            <Nav.Link
+              as={Link}
+              to="/booking"
+              className="white-text"
+              onMouseEnter={handleButtonMouseEnter}
+              onMouseLeave={handleButtonMouseLeave}
+            >
               Book
             </Nav.Link>
             <Nav.Link as={Link} to="/about">
@@ -68,20 +108,17 @@ function CoolNavbar({ onSelectPlanet }) {
                   {planetsData[planetKey].title}
                 </NavDropdown.Item>
               ))}
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">Something else here</NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link
+              as={Link}
+              to="/about"
+              className="white-text"
+              onMouseEnter={handleButtonMouseEnter}
+              onMouseLeave={handleButtonMouseLeave}
+            >
+              About
+            </Nav.Link>
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-              onMouseMove={handleRocketMouseMove}
-            />
-            <Button variant="outline-light">Search</Button>
-          </Form>
         </Navbar.Collapse>
       </Container>
       {rocketVisible && (
@@ -94,12 +131,11 @@ function CoolNavbar({ onSelectPlanet }) {
             height: 'auto',
             left: `${rocketPosition.x}px`,
             top: `${rocketPosition.y}px`,
-            zIndex: -1, // Set a higher value to place it above other components
+            zIndex: -1,
           }}
           onMouseMove={handleRocketMouseMove}
         />
       )}
-      
     </Navbar>
   );
 }

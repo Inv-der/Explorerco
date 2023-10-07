@@ -9,6 +9,7 @@ import About  from './About';
 import Navbar from './Navbar';
 import SpaceTourismBooking from './SpaceTravelBooking.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import About from './About';
 
 function App() {
   const [selectedPlanet, setSelectedPlanet] = React.useState(null);
@@ -20,7 +21,7 @@ function App() {
       setSelectedPlanet(planetKey);  // Select the planet
     }
   };
-
+  
   return (
     <Router>
       <div>
