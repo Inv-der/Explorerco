@@ -1,6 +1,7 @@
 import React from 'react';
 import planetsData from './data/planets.json';
 
+
 function Navigation({ onSelectPlanet }) {
     return (
         <nav>

@@ -10,6 +10,14 @@ import Navbar from './Navbar';
 function App() {
   const [selectedPlanet, setSelectedPlanet] = React.useState(null);
 
+  const handleSelectPlanet = (planetKey) => {
+    if (selectedPlanet === planetKey) {
+      setSelectedPlanet(null);  // Deselect if the planet is already selected
+    } else {
+      setSelectedPlanet(planetKey);  // Select the planet
+    }
+  };
+
   return (
     <div className="container">
       <Navbar />
@@ -24,8 +32,8 @@ function App() {
 
       {/* Navigation Component */}
       <div className="navigation">
-        <Navigation onSelectPlanet={setSelectedPlanet} />
-      </div>
+      <Navigation onSelectPlanet={handleSelectPlanet} />
+    </div>
 
       {/* Planet Information and Itinerary */}
       {selectedPlanet && (
