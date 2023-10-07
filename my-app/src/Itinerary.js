@@ -1,9 +1,13 @@
 import React, { useState } from "react";
+import { useParams } from 'react-router-dom';
+import planetsData from './data/planets.json';
+import './Itinerary.css';
 
-function Itinerary({ planet }) {
+function Itinerary() {
+    const { planetName } = useParams();
+    const planet = planetsData[planetName];
+
     const [selectedPOIs, setSelectedPOIs] = useState([]);
-
-    if (!planet) return <p>Select a planet to plan your itinerary.</p>;
 
     const handlePOISelection = (poi) => {
         if (selectedPOIs.some(selectedPOI => selectedPOI.name === poi.name)) {
@@ -14,7 +18,7 @@ function Itinerary({ planet }) {
     };
 
     const downloadBucketListDoc = () => {
-        let htmlContent = "<h1>Bucket List</h1>";
+        let htmlContent = "<h1>Bucket List for " + planet.title + "</h1>";
         selectedPOIs.forEach(poi => {
             htmlContent += `<p>${poi.name} Visited: [ ]</p>`;
         });
@@ -23,29 +27,24 @@ function Itinerary({ planet }) {
         const href = URL.createObjectURL(blob);
         const link = document.createElement('a');
         link.href = href;
-        link.download = 'bucket_list.html';
+        link.download = planet.title + '_bucket_list.html';
         
-        // Append the link to the DOM
         document.body.appendChild(link);
-    
-        // Trigger a click event on the link
         link.click();
-    
-        // Delay the removal of the link for browser compatibility
+
         setTimeout(() => {
             document.body.removeChild(link);
-            // Release the blob URL
             URL.revokeObjectURL(href);
         }, 100);
     };
-    
-        
-      
+
+    if (!planet) return <p>Select a planet to plan your itinerary.</p>;
+
     return (
         <div>
             <h3>Plan Your Itinerary for {planet.title}</h3>
 
-            <h4>Visitable place:</h4>
+            <h4>Select Places to Visit:</h4>
             {planet.points_of_interest && (
                 <ul>
                     {planet.points_of_interest.map((poi) => (
@@ -72,7 +71,7 @@ function Itinerary({ planet }) {
                 <button onClick={downloadBucketListDoc}>
                     Download Bucket List
                 </button>
-    )}
+            )}
         </div>
     );
 }

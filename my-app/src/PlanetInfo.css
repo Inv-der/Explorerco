@@ -1,139 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
-.planet-container {
+.planet-info-container {
   padding: 20px;
+  background-color: #121212;
+  color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
   margin: 20px auto;
+  font-family: 'Arial', sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.planet-info-container:hover {
+  transform: scale(1.02);
+}
+
+.planet-title {
   text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
-.planet-image {
-  display: block;
-  max-width: 100%;
-  margin: 20px auto;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+.planet-image-container {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.planet-container,
-h1,
-p,
-h4,
-ul.travel-methods,
-ul.points-of-interest,
-.container,
-strong {
-  font-family: 'Poppins', sans-serif;
-  color: white; /* Set text color to white */
+.planet-desc {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
-h1 {
-  margin-top: 20px;
+.planet-distance {
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-p {
-  font-size: 20px;
-}
-
-h4 {
-  margin-top: 20px;
-}
-
-ul.travel-methods,
-ul.points-of-interest {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.poi-image {
-  display: block;
-  max-width: 70%;
-  margin: 10px auto;
+.planet-tips {
+  margin-bottom: 20px;
+  background: rgba(255,255,255,0.1);
+  padding: 10px;
   border-radius: 5px;
 }
 
-.container {
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  text-align: center;
-}
-
-iframe {
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-h1 {
-  color: #fff;
-  border-bottom: 2px solid #eee;
+.planet-tips h2 {
+  font-size: 1.4rem;
   margin-bottom: 10px;
+  border-bottom: 2px solid #fff;
 }
 
-h4 {
-  margin-top: 20px;
+.travel-methods,
+.points-of-interest {
+  margin-bottom: 20px;
 }
 
-ul {
+.travel-methods h2,
+.points-of-interest h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #fff;
+}
+
+.travel-methods ul,
+.points-of-interest ul {
   list-style-type: none;
-  padding: 0;
+  padding-left: 0;
 }
 
-ul li {
-  margin: 10px 0;
+.travel-methods li,
+.points-of-interest li {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 5px;
 }
 
-li img {
-  max-width: 30%;
-  border-radius: 10px;
-  margin-top: 10px;
+.poi-item {
+  display: flex;
+  align-items: center;
 }
 
-.animated-button {
-  position: relative;
-  display: inline-block;
-  padding: 12px 24px;
-  border: none;
-  font-size: 30px;
-  background-color: inherit;
-  border-radius: 100px;
-  font-weight: 600;
-  color: lightblue;
-  cursor: pointer;
-  overflow: hidden;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-  margin-top: 10px;
-}
-
-.animated-button span:last-child {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
+.poi-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
   border-radius: 50%;
-  opacity: 0;
-  transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+  margin-right: 15px;
 }
 
-.animated-button span:first-child {
-  position: relative;
-  z-index: 1;
-}
-
-.animated-button:hover {
-  color: #ffffff;
-}
-
-.animated-button:active {
-  transform: scale(0.95);
-}
-
-.animated-button:hover span:last-child {
-  width: 150px;
-  height: 150px;
-  opacity: 1;
+.points-of-interest h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
 }

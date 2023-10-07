@@ -10,6 +10,7 @@ import SpaceTourismBooking from './SpaceTravelBooking.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './About';
 
+
 function App() {
   const [selectedPlanet, setSelectedPlanet] = React.useState(null);
 
@@ -39,8 +40,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Carousel />} />
           <Route path="/booking" element={<SpaceTourismBooking />} />
-          <Route path="/planet-info/:planetName" element={<PlanetInfo />} />
-          <Route path="/itinerary" element={<Itinerary />} />
+          <Route path="/planet-info/:planetName" element={<div><PlanetInfo /></div>} />
+         
           <Route path="/about" element={<About />} />
         </Routes>
       </div>
