@@ -1,0 +1,35 @@
+.space-tourism-booking {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.booking-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.from-to-section {
+    display: flex;
+    gap: 20px;
+}
+
+.info-bar {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}

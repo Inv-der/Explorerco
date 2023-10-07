@@ -24,7 +24,7 @@ function CoolNavbar({ onSelectPlanet }) {
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
+            <Nav.Link href="#link">Book</Nav.Link>
             <NavDropdown title="Dropdown" id="navbarScrollingDropdown">
               {Object.keys(planetsData).map(planetKey => (
                 <NavDropdown.Item key={planetKey} onClick={() => onSelectPlanet(planetKey)}>
