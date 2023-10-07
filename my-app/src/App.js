@@ -31,6 +31,7 @@ function App() {
       <Carousel />
 
       {/* Navigation Component */}
+      
       <div className="navigation">
       <Navigation onSelectPlanet={handleSelectPlanet} />
     </div>
