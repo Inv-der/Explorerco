@@ -49,7 +49,6 @@ function Itinerary({ planet }) {
                     <li key={poi.name}>
                         <h5>{poi.name}</h5>
                         <p>{poi.desc}</p>
-                        <img src={poi.image} alt={poi.name} />
                     </li>
                 ))}
             </ul>

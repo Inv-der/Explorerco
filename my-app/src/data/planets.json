@@ -13,7 +13,7 @@
             "2":"Travel by Hayabusa2",
             "3":"Travel by Boeing CST-100 Starliner"
         },
-        "image": "/planets/mercuryn.webp",
+        "image": "https://solarsystem.nasa.gov/gltf_embed/2369/",
         "points_of_interest": [
             {
                 "name":"Caloris Basin",
@@ -41,7 +41,7 @@
             "2":"Travel by Akatsuki ",
             "3":"Travel by Venus Express"
         },
-        "image": "/planets/venusn.webp",
+        "image": "https://solarsystem.nasa.gov/gltf_embed/2342/",
         "points_of_interest": [
             {
                 "name":"Ishtar Terra",
@@ -68,7 +68,7 @@
             "2":"Travel by train",
             "3":"Travel by plane"
         },
-        "image": "/planets/mercuryn.webp",
+        "image": "https://solarsystem.nasa.gov/gltf_embed/2392/",
         "points_of_interest": [
             {
                 "name":"The Great Barrier Reef",
@@ -95,7 +95,7 @@
             "2":"Travel by train",
             "3":"Travel by plane"
         },
-        "image": "/planets/mercuryn.webp",
+        "image": "https://solarsystem.nasa.gov/gltf_embed/2372/",
         "points_of_interest": [
             {
                 "name":"Olympus Mons ",
@@ -122,7 +122,7 @@
             "2":"Travel by train",
             "3":"Travel by plane"
         },
-        "image": "/planets/mercuryn.webp",
+        "image": "https://solarsystem.nasa.gov/gltf_embed/2375/",
         "points_of_interest": [
             {
                 "name":"Europa",
@@ -149,7 +149,7 @@
             "2":"Travel by train",
             "3":"Travel by plane"
         },
-        "image": "/planets/mercuryn.webp",
+        "image": "https://solarsystem.nasa.gov/gltf_embed/2355/",
         "points_of_interest": [
             {
                 "name":"Titan",
@@ -176,7 +176,7 @@
             "2":"Travel by train",
             "3":"Travel by plane"
         },
-        "image": "/planets/mercuryn.webp",
+        "image": "https://solarsystem.nasa.gov/gltf_embed/2344/",
         "points_of_interest": [
             {
                 "name":"Miranda",
@@ -203,7 +203,7 @@
             "2":"Travel by train",
             "3":"Travel by plane"
         },
-        "image": "/planets/mercuryn.webp",
+        "image": "https://solarsystem.nasa.gov/gltf_embed/2364/",
         "points_of_interest": [
             {
                 "name":"Triton",

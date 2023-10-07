@@ -5,10 +5,20 @@ function PlanetInfo({ planet }) {
     if (!planet) return <p>Select a planet to view details.</p>;
 
     return (
-        <div>
-            <img src={planet.image} alt={planet.title} />
-            <h2>{planet.title}</h2>
+        <div className="container">
+            <h1>{planet.title}</h1>
+            <div style={{ position: 'relative', marginBottom: '20px' }}>
+               {/* <iframe 
+                    src={planet.image}
+                    title="NASA Solar System Visualization" 
+                    width="100%" 
+                    height="300" 
+                    frameBorder="0" 
+                    allowFullScreen
+    ></iframe>*/}
+            </div>
             <p>{planet.desc}</p>
+            
             {planet.distance && 
                 <p>Distance: {planet.distance.value} {planet.distance.unit}</p>
             }
@@ -16,23 +26,29 @@ function PlanetInfo({ planet }) {
             <h4>Travel Tips:</h4>
             <p>{planet.tips}</p>
             
-            <h4>Available Travel Methods:</h4>
             {planet.travel_methods && 
-                <ul>
-                    {Object.values(planet.travel_methods).map((method, index) => <li key={index}>{method}</li>)}
-                </ul>
+                <>
+                    <h4>Available Travel Methods:</h4>
+                    <ul>
+                        {Object.values(planet.travel_methods).map((method, index) => <li key={index}>{method}</li>)}
+                    </ul>
+                </>
             }
 
-            <h4>Points of Interest:</h4>
-            <ul>
-                {planet.points_of_interest && planet.points_of_interest.map((poi, index) => (
-                    <li key={index}>
-                        <strong>Name:</strong> {poi.name}<br />
-                        <strong>Description:</strong> {poi.desc}<br />
-                        <img src={poi.image} alt={poi.name} />
-                    </li>
-                ))}
-            </ul>
+            {planet.points_of_interest &&
+                <>
+                    <h4>Points of Interest:</h4>
+                    <ul>
+                        {planet.points_of_interest.map((poi, index) => (
+                            <li key={index}>
+                                <strong>Name:</strong> {poi.name}<br />
+                                <strong>Description:</strong> {poi.desc}<br />
+                                <img src={poi.image} alt={poi.name} />
+                            </li>
+                        ))}
+                    </ul>
+                </>
+            }
         </div>
     );
 }
