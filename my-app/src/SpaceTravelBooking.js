@@ -73,15 +73,7 @@ function SpaceTourismBooking() {
           />
           Round Trip
         </label>
-        <label>
-          <input
-            type="radio"
-            value="Multi City"
-            checked={bookingType === "Multi City"}
-            onChange={() => setBookingType("Multi City")}
-          />
-          Multi City
-        </label>
+        
       </div>
 
       <label>
