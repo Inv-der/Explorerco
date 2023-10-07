@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import planetsData from "./data/planets.json";
+import "./SpaceTourismBooking.css";
 
 function SpaceTourismBooking() {
   const [bookingType, setBookingType] = useState("Round Trip");
@@ -50,11 +51,11 @@ function SpaceTourismBooking() {
   };
 
   return (
-    <div>
+    <div className="box-1">
+      <h2>Book the rocket to explorer</h2>
     <div className="box">
-      <h2>Book International and Domestic Flights</h2>
-
-      <div>
+      
+      <div className="type-oneway-round-trip">
         <label>
           <input
             type="radio"
@@ -62,7 +63,7 @@ function SpaceTourismBooking() {
             checked={bookingType === "One Way"}
             onChange={() => setBookingType("One Way")}
           />
-          One Way
+          <p>One Way</p>
         </label>
         <label>
           <input
@@ -70,17 +71,13 @@ function SpaceTourismBooking() {
             value="Round Trip"
             checked={bookingType === "Round Trip"}
             onChange={() => setBookingType("Round Trip")}
-          />
-          Round Trip
+          /><p>Round Trip</p>
+          
         </label>
-        
       </div>
-      <br />
-
       <label>
-        From:
         <select value={fromCity} onChange={(e) => setFromCity(e.target.value)}>
-          <option value="">Select...</option>
+          <option value="">From</option>
           {Object.entries(planetsData).map(([key, planet]) => (
             <option key={key} value={key}>
               {planet.title}
@@ -91,9 +88,9 @@ function SpaceTourismBooking() {
       <br />
 
       <label>
-        To:
+        
         <select value={toCity} onChange={(e) => setToCity(e.target.value)}>
-          <option value="">Select...</option>
+          <option value="">Journey to</option>
           {Object.entries(planetsData)
             .filter(([key]) => key !== fromCity)
             .map(([key, planet]) => (
@@ -106,9 +103,8 @@ function SpaceTourismBooking() {
       <br />
 
       <label>
-        By:
         <select value={travelby} onChange={(e) => setTravelby(e.target.value)}>
-          <option value="">Select...</option>
+          <option value="">select the rocket</option>
           {fromCity &&
             Object.values(planetsData[fromCity].travel_methods).map(
               (method, index) => (
@@ -121,20 +117,22 @@ function SpaceTourismBooking() {
       </label>
       <br />
       <label>
-        Departure date:
+      <p>Departure date:</p>
         <input
           type="date"
+          className="date-picker"
           value={departureDate}
           onChange={(e) => setDepartureDate(e.target.value)}
         />
       </label>
       <br />
-
+      
       {bookingType === "Round Trip" && (
         <label>
-          Return date:
+          <p>Return date:</p>
           <input
             type="date"
+            className="date-picker"
             value={returnDate}
             onChange={(e) => setReturnDate(e.target.value)}
           />
