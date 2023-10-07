@@ -51,6 +51,7 @@ function SpaceTourismBooking() {
 
   return (
     <div>
+    <div className="box">
       <h2>Book International and Domestic Flights</h2>
 
       <div>
@@ -74,6 +75,7 @@ function SpaceTourismBooking() {
         </label>
         
       </div>
+      <br />
 
       <label>
         From:
@@ -86,6 +88,7 @@ function SpaceTourismBooking() {
           ))}
         </select>
       </label>
+      <br />
 
       <label>
         To:
@@ -100,6 +103,7 @@ function SpaceTourismBooking() {
             ))}
         </select>
       </label>
+      <br />
 
       <label>
         By:
@@ -115,7 +119,7 @@ function SpaceTourismBooking() {
             )}
         </select>
       </label>
-
+      <br />
       <label>
         Departure date:
         <input
@@ -124,6 +128,7 @@ function SpaceTourismBooking() {
           onChange={(e) => setDepartureDate(e.target.value)}
         />
       </label>
+      <br />
 
       {bookingType === "Round Trip" && (
         <label>
@@ -135,8 +140,10 @@ function SpaceTourismBooking() {
           />
         </label>
       )}
+        <br />
 
-      <button onClick={handleSearchClick}>SEARCH</button>
+      <button onClick={handleSearchClick}>Confirm booking </button>
+    </div>
     </div>
   );
 }
