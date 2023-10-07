@@ -10,11 +10,43 @@ function SpaceTourismBooking() {
   const [travelby, setTravelby] = useState("");
 
 
+  const generateTicket = () => {
+    const ticketData = `
+      Booking Type: ${bookingType}
+      From: ${fromCity}
+      To: ${toCity}
+      Travel by: ${travelby}
+      Departure Date: ${departureDate}
+      ${bookingType === 'Round Trip' ? `Return Date: ${returnDate}` : ''}
+    `;
+
+    const blob = new Blob([ticketData], { type: 'text/plain;charset=utf-8' });
+    const href = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = href;
+    link.download = 'ticket.txt';
+    
+    // Append the link to the DOM
+    document.body.appendChild(link);
+
+    // Trigger a click event on the link
+    link.click();
+
+    // Delay the removal of the link for browser compatibility
+    setTimeout(() => {
+        document.body.removeChild(link);
+        // Release the blob URL
+        URL.revokeObjectURL(href);
+    }, 100);
+};
+
+
   const handleSearchClick = () => {
     if (fromCity && toCity && departureDate) {
-      alert("Search Initiated!");
+      generateTicket();  // Call the generateTicket function when conditions are met
+      alert('Search Initiated!');
     } else {
-      alert("Please complete the form before searching.");
+      alert('Please complete the form before searching.');
     }
   };
 
