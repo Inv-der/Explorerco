@@ -21,21 +21,24 @@ function App() {
   };
 
   return (
-        <div className="container">
-            <Router>
-                <Navbar onSelectPlanet={handleSelectPlanet} />
-                <div className="header" style={{ marginTop: '20px' }}>
-                    <h1>Exploring on a golden journey</h1>
-                </div>
-                <Routes>
-                    <Route path="/" element={<Carousel />} />
-                    <Route path="/booking" element={<SpaceTourismBooking />} />
-                    <Route path="/planet-info/:planetName" element={<PlanetInfo />} />
-                    <Route path="/itinerary" element={<Itinerary />} />
-                </Routes>
-            </Router>
+    <Router>
+      <div>
+        {/* Move Navbar outside the entire component */}
+        <Navbar onSelectPlanet={handleSelectPlanet} />
+      </div>
+      <div className="container">
+        <div className="header" style={{ marginTop: '20px' }}>
+          <h1>Exploring on a golden journey</h1>
         </div>
-    );
+        <Routes>
+          <Route path="/" element={<Carousel />} />
+          <Route path="/booking" element={<SpaceTourismBooking />} />
+          <Route path="/planet-info/:planetName" element={<PlanetInfo />} />
+          <Route path="/itinerary" element={<Itinerary />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
 export default App;
