@@ -19,12 +19,10 @@ function App() {
   };
 
   return (
-    <div className="container">
-      <Navbar onSelectPlanet={handleSelectPlanet} />
+    <div><Navbar onSelectPlanet={handleSelectPlanet} />
 
-      <div className="header" style={{ marginTop: '20px' }}>
-        <h1>Exploring on a golden journey</h1>
-      </div>
+    <div className="container">
+    
 
       {/* New Carousel Component with Videos */}
       {/*<Carousel />*/}
@@ -48,6 +46,7 @@ function App() {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 }
