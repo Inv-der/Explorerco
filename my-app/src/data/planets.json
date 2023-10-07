@@ -1,5 +1,4 @@
 {
-    
     "mercury": {
         "title": "Mercury",
         "desc": "Mercury is the closest planet to the Sun and is known for its extreme temperature variations, with scorching hot days and freezing nights.        ",
@@ -46,12 +45,12 @@
             {
                 "name":"Ishtar Terra",
                 "desc":"A highland region with vast mountains and unique geological formations. ",
-                "image":"my-app/src/data/images/1.png"
+                "image":"/planets/Ishtar_terra_.jpg"
             },
             {
-                "name":"hi2",
-                "desc":"hiw",
-                "image":"my-app/src/data/images/1.png"
+                "name":" Aphrodite Terra",
+                "desc":"Another prominent highland region,charaterized by its vast elevated plateaus and rugged terrain",
+                "image":"/planets/Aphrodite_Terra.png"
             }
         ]
     },
@@ -73,12 +72,12 @@
             {
                 "name":"The Great Barrier Reef",
                 "desc":"The Great Barrier Reef in Australia for incredible marine life and coral reefs. ",
-                "image":"my-app/src/data/images/1.png"
+                "image":"/planets/Great-Barrier-Reef-Australia-coast.webp"
             },
             {
-                "name":"hi2",
-                "desc":"hiw",
-                "image":"my-app/src/data/images/1.png"
+                "name":"Machu picchu,peru",
+                "desc":"This ancient incancitadel is nestled high in the Andes Mountains",
+                "image":"/planets/machupichu.jpg"
             }
         ]
     },
@@ -91,21 +90,21 @@
         },
         "tips":"Prepare for long-duration space travel and bring supplies for survival.",
         "travel_methods":{
-            "1":"Travel by car",
-            "2":"Travel by train",
-            "3":"Travel by plane"
+            "1":"Travel by Orion spacecraft",
+            "2":"Travel by Trans-Mars Injection",
+            "3":"Travel by Interplanetary Cruise"
         },
         "image": "https://solarsystem.nasa.gov/gltf_embed/2372/",
         "points_of_interest": [
             {
-                "name":"Olympus Mons ",
+                "name":"Olympus Mons",
                 "desc":"The largest volcano in the solar system, with stunning views from its summit.",
-                "image":"my-app/src/data/images/1.png"
+                "image":"/planets/olympus mons.jpg"
             },
             {
-                "name":"hi2",
-                "desc":"hiw",
-                "image":"my-app/src/data/images/1.png"
+                "name":"Valles Marineris",
+                "desc":"The vast canyon system on mars,it stretches for over 2,500 miles and is up to 7 miles deep",
+                "image":"/planets/Valles Marineris.jpg"
             }
         ]
     },
@@ -118,21 +117,22 @@
         },
         "tips":"Stay far away from Jupiter's violent storms; visit its moons instead.",
         "travel_methods":{
-            "1":"Travel by car",
-            "2":"Travel by train",
-            "3":"Travel by plane"
+            "1":"Travel by Robotic spacecraft",
+            "2":"Travel by Aerobraking",
+            "3":"Travel by Floating probes"
+
         },
         "image": "https://solarsystem.nasa.gov/gltf_embed/2375/",
         "points_of_interest": [
             {
                 "name":"Europa",
                 "desc":"Explore the subsurface ocean beneath its icy crust for signs of life.",
-                "image":"my-app/src/data/images/1.png"
+                "image":"/planets/Europa.png"
             },
             {
-                "name":"hi2",
-                "desc":"hiw",
-                "image":"my-app/src/data/images/1.png"
+                "name":"Ganymede",
+                "desc":"Ganymede is one of Jupiter's Galilean moons with a subsurface ocean",
+                "image":"/planets/ganemede.jpeg"
             }
         ]
     },
@@ -145,21 +145,21 @@
         },
         "tips":"Enjoy the view of Saturn's majestic rings from a safe distance",
         "travel_methods":{
-            "1":"Travel by car",
-            "2":"Travel by train",
-            "3":"Travel by plane"
+            "1":"Travel by Orbital insertion",
+            "2":"Travel by Flybys",
+            "3":"Travel by Entry Probes"
         },
         "image": "https://solarsystem.nasa.gov/gltf_embed/2355/",
         "points_of_interest": [
             {
                 "name":"Titan",
                 "desc":"Study its unique atmosphere and hydrocarbon lakes and rivers.",
-                "image":"my-app/src/data/images/1.png"
+                "image":"/planets/titan.jpg"
             },
             {
-                "name":"hi2",
-                "desc":"hiw",
-                "image":"my-app/src/data/images/1.png"
+                "name":"Rings of saturn",
+                "desc":"Saturn is famous for its stunning ring system,which is composed of ice and rock particles",
+                "image":"/planets/ring.jpeg"
             }
         ]
     },
@@ -172,21 +172,21 @@
         },
         "tips":"Embrace the challenges of a remote study, as Neptune offers limited surface exploration possibilities.",
         "travel_methods":{
-            "1":"Travel by car",
-            "2":"Travel by train",
-            "3":"Travel by plane"
+            "1":"Travel by Space launch System",
+            "2":"Travel by Nuclear propulsion",
+            "3":"Travel by Orbital Insertion"
         },
         "image": "https://solarsystem.nasa.gov/gltf_embed/2344/",
         "points_of_interest": [
             {
                 "name":"Miranda",
                 "desc":"The most heavily cratered moon with diverse geological features.",
-                "image":"my-app/src/data/images/1.png"
+                "image":"/planets/miranda.webp"
             },
             {
-                "name":"hi2",
-                "desc":"hiw",
-                "image":"my-app/src/data/images/1.png"
+                "name":"Ring System",
+                "desc":"set of faint,narrow rings that encircle the planet",
+                "image":"/planets/ringsystem.jpg"
             }
         ]
     },
@@ -199,23 +199,21 @@
         },
         "tips":" Embrace the challenges of a remote study, as Neptune offers limited surface exploration possibilities.",
         "travel_methods":{
-            "1":"Travel by car",
-            "2":"Travel by train",
-            "3":"Travel by plane"
+            "1":"Travel by Robotic Spacecraft",
+            "2":"Travel by Flybys",
+            "3":"Travel by Orbital Insertion"
         },
         "image": "https://solarsystem.nasa.gov/gltf_embed/2364/",
         "points_of_interest": [
             {
                 "name":"Triton",
                 "desc":"Observe the geysers and unique nitrogen-ice terrain on this moon.",
-                "image":"my-app/src/data/images/1.png"
+                "image":"/planets/triton.jpg"
             },
-            {
-                "nae":"hi2",
-                "desc":"hiw",
-                "image":"my-app/src/data/images/1.png"
+            { "name":"Small Dark spot",
+            "desc":"The Small Dark Spot was found at a latitude of 54° South while rotating East around Neptune with a period of 16.1 hours",
+            "image":"/planets/darkspot.jpeg"
             }
         ]
     }
-    
     }
