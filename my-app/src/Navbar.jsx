@@ -75,14 +75,8 @@ function CoolNavbar({ onSelectPlanet }) {
       onMouseMove={handleNavbarMouseMove}
     >
       <Container fluid>
-        <Navbar.Brand
-          as={Link}
-          to="/"
-          className="logo"
-          onMouseEnter={handleLogoMouseEnter}
-          onMouseLeave={handleLogoMouseLeave}
-        >
-          <Image src='\planets\bird_2-removebg-preview.png' alt="Logo" style={{ height: '100px', width: '100px' }} />
+      <Navbar.Brand as={Link} to="/">
+          <Image src='\planets\bird_2-removebg-preview.png' alt="Logo" style={{ height: '100px', width: 'auto' }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll" style={{ paddingRight: '50px' }}>
@@ -105,13 +99,10 @@ function CoolNavbar({ onSelectPlanet }) {
             >
               Book
             </Nav.Link>
-            <NavDropdown
-              title="Planets"
-              id="navbarScrollingDropdown"
-              className='white-text'
-              onMouseEnter={handleDropdownMouseEnter}
-              onMouseLeave={handleDropdownMouseLeave}
-            >
+            <Nav.Link as={Link} to="/about">
+              about
+            </Nav.Link>
+            <NavDropdown title="Dropdown" id="navbarScrollingDropdown">
               {Object.keys(planetsData).map((planetKey) => (
                 <NavDropdown.Item key={planetKey} as={Link} to={`/planet-info/${planetKey}`}>
                   {planetsData[planetKey].title}
