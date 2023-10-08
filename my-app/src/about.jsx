@@ -1,56 +1,40 @@
-import React from 'react';
-import './about.css'
+import React, { useState, useEffect } from 'react';
+import './About.css';
 
 function About() {
+  const [teamData, setTeamData] = useState(null);
+
+  useEffect(() => {
+    // Load the team data from the JSON file
+    import('./data/member.json').then(data => {
+      setTeamData(data);
+    });
+  }, []);
+
+  if (!teamData) return <div>Loading...</div>;
+
   return (
-    <div className="about-page">
-      <h1>About Our Project</h1>
-      <p>
-        Welcome to our React project! We're excited to tell you more about what we've been working on.
-      </p>
+    <div className="about-container">
+      <h1>About Team {teamData.teamName}</h1>
+      <p>{teamData.description}</p>
 
-      <h2>Project Overview</h2>
-      <p>
-        Our project is a [brief description of your project's purpose and goals]. We aim to [mention the project's main objectives].
-      </p>
-
-      <h2>Technologies Used</h2>
-      <p>
-        This project was built using the following technologies:
-      </p>
-      <ul>
-        <li>React</li>
-        <li>JavaScript</li>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        {/* Add more technologies as needed */}
-      </ul>
-
-      <h2>Meet the Team</h2>
-      <p>
-        Our dedicated team of developers and designers have worked hard to bring this project to life. Meet the key team members:
-      </p>
+      <h2>Team Members</h2>
       <div className="team-members">
-        <div className="team-member">
-          <img src="team-member1.jpg" alt="Team Member 1" />
-          <h3>John Doe</h3>
-          <p>Frontend Developer</p>
+        {teamData.members.map(member => (
+          <div className="card">
+          <img className="img" src={member.image}/>
+          <div className="textBox">
+            <p className="text head">{member.name}</p>
+            <span>{member.role}</span>
+            <p className="text price">{member.description}</p>
+          </div>
         </div>
-        <div className="team-member">
-          <img src="team-member2.jpg" alt="Team Member 2" />
-          <h3>Jane Smith</h3>
-          <p>UI/UX Designer</p>
-        </div>
-        {/* Add more team members as needed */}
+           
+        ))}
       </div>
 
-      <h2>Contact Us</h2>
-      <p>
-        We would love to hear from you! If you have any questions, feedback, or inquiries, please don't hesitate to reach out to us.
-      </p>
-      <p>Email: contact@example.com</p>
-
-      {/* Add any other relevant sections as needed */}
+      <h2>Our Challenge</h2>
+      <p>{teamData.challenge}</p>
     </div>
   );
 }
