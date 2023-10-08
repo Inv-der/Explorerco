@@ -15,15 +15,14 @@ function PlanetInfo() {
     <div className="planet-info-container white-text">
       <h1 className="planet-title">{planet.title}</h1>
       <div className="planet-image-container">
-        {/* Uncomment the iframe if you want to use it */}
-        {/* <iframe 
+        <iframe 
           src={planet.image}
           title="NASA Solar System Visualization" 
           width="100%" 
           height="300" 
           frameBorder="0" 
           allowFullScreen
-        ></iframe> */}
+        ></iframe>
       </div>
       <p className="planet-desc">{planet.desc}</p>
 
