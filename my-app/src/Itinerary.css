@@ -10,7 +10,7 @@
 
 /* Styling for headers */
 h3, h4 {
-    color: #333;
+    color: white;
     border-bottom: 2px solid #666;
     padding-bottom: 10px;
     margin-top: 20px;
@@ -57,7 +57,7 @@ button:hover {
 }
 
 .bucket-list p {
-    color: #555;
+    color: white;
     margin-bottom: 10px;
 }
 
@@ -73,3 +73,6 @@ button:hover {
 .download-btn:hover {
     background-color: #218838;
 }
+h3, h4, h5, p {
+    color: white;
+  }

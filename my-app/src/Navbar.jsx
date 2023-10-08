@@ -1,3 +1,5 @@
+// CoolNavbar.jsx
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
@@ -80,63 +82,83 @@ function CoolNavbar({ onSelectPlanet }) {
           onMouseEnter={handleLogoMouseEnter}
           onMouseLeave={handleLogoMouseLeave}
         >
-          <Image src='\planets\bird_2-removebg-preview.png' alt="Logo" style={{ height: '100px', width: '100px' }} />
+          <Image src='\planets\logo.png' alt="Logo" style={{ height: '130px', width: '130px' }} />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll" style={{ paddingRight: '50px' }}>
-          <Nav className="ms-auto" style={{ maxHeight: '100px' }} navbarScroll>
-            <Nav.Link
-              as={Link}
-              to="/"
-              className="white-text"
-              onMouseEnter={handleButtonMouseEnter}
-              onMouseLeave={handleButtonMouseLeave}
-            >
-              Home
-            </Nav.Link>
-            <Nav.Link
-              as={Link}
-              to="/booking"
-              className="white-text"
-              onMouseEnter={handleButtonMouseEnter}
-              onMouseLeave={handleButtonMouseLeave}
-            >
-              Book
-            </Nav.Link>
-            <NavDropdown
-              title="Planets"
-              id="navbarScrollingDropdown"
-              className='white-text'
-              onMouseEnter={handleDropdownMouseEnter}
-              onMouseLeave={handleDropdownMouseLeave}
-            >
-              {Object.keys(planetsData).map((planetKey) => (
-                <NavDropdown.Item key={planetKey} as={Link} to={`/planet-info/${planetKey}`}>
-                  {planetsData[planetKey].title}
-                </NavDropdown.Item>
-              ))}
-            </NavDropdown>
-            <Nav.Link
-              as={Link}
-              to="/about"
-              className="white-text"
-              onMouseEnter={handleButtonMouseEnter}
-              onMouseLeave={handleButtonMouseLeave}
-            >
-              About
-            </Nav.Link>
-            <Nav.Link
-              as={Link}
-              to="/login"
-              className="white-text"
-              onMouseEnter={handleButtonMouseEnter}
-              onMouseLeave={handleButtonMouseLeave}
-            >
-              Login
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
+
+        {/* Right-aligned links */}
+        <Nav className="ms-auto" style={{ maxHeight: '100px' }} navbarScroll>
+          <Nav.Link
+            as={Link}
+            to="/"
+            className="white-text"
+            onMouseEnter={handleButtonMouseEnter}
+            onMouseLeave={handleButtonMouseLeave}
+          >
+            Home
+          </Nav.Link>
+          <Nav.Link
+            as={Link}
+            to="/booking"
+            className="white-text"
+            onMouseEnter={handleButtonMouseEnter}
+            onMouseLeave={handleButtonMouseLeave}
+          >
+            Book
+          </Nav.Link>
+          <NavDropdown
+            title="Planets"
+            id="navbarScrollingDropdown"
+            className='white-text'
+            onMouseEnter={handleDropdownMouseEnter}
+            onMouseLeave={handleDropdownMouseLeave}
+          >
+            {Object.keys(planetsData).map((planetKey) => (
+              <NavDropdown.Item key={planetKey} as={Link} to={`/planet-info/${planetKey}`}>
+                {planetsData[planetKey].title}
+              </NavDropdown.Item>
+            ))}
+          </NavDropdown>
+          <Nav.Link
+            as={Link}
+            to="/about"
+            className="white-text"
+            onMouseEnter={handleButtonMouseEnter}
+            onMouseLeave={handleButtonMouseLeave}
+          >
+            About
+          </Nav.Link>
+
+          {/* Centered "Team" link */}
+          <button
+            className="btn1"
+            type="button1"
+            style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)' }}
+            onMouseEnter={handleButtonMouseEnter}
+            onMouseLeave={handleButtonMouseLeave}
+          >
+            <strong>EXPLOER'N'CO</strong>
+            <div id="container-stars">
+              <div id="stars"></div>
+            </div>
+
+            <div id="glow">
+              <div className="circle"></div>
+              <div className="circle"></div>
+            </div>
+          </button>
+
+          <Nav.Link
+            as={Link}
+            to="/login"
+            className="white-text"
+            onMouseEnter={handleButtonMouseEnter}
+            onMouseLeave={handleButtonMouseLeave}
+          >
+            Login
+          </Nav.Link>
+        </Nav>
       </Container>
+
       {rocketVisible && (
         <Image
           src="https://cdn.pixabay.com/animation/2022/07/31/06/27/06-27-17-124_512.gif"

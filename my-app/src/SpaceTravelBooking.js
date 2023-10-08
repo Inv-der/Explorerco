@@ -52,18 +52,18 @@ function SpaceTourismBooking() {
 
   return (
     <div className="box-1">
-      <h2>Book the rocket to explorer</h2>
+      <h2 className="white-text">Book the rocket to explorer</h2>
     <div className="box">
       
       <div className="type-oneway-round-trip">
         <label>
-          <input
+          <input className="white-text"
             type="radio"
             value="One Way"
             checked={bookingType === "One Way"}
             onChange={() => setBookingType("One Way")}
           />
-          <p>One Way</p>
+          <p className="white-text">One Way</p>
         </label>
         <label>
           <input
@@ -71,7 +71,7 @@ function SpaceTourismBooking() {
             value="Round Trip"
             checked={bookingType === "Round Trip"}
             onChange={() => setBookingType("Round Trip")}
-          /><p>Round Trip</p>
+          /><p className="white-text">Round Trip</p>
           
         </label>
       </div>
@@ -117,7 +117,7 @@ function SpaceTourismBooking() {
       </label>
       <br />
       <label>
-      <p>Departure date:</p>
+      <p className="white-text">Departure date:</p>
         <input
           type="date"
           className="date-picker"

@@ -44,7 +44,7 @@ function Itinerary() {
         <div>
             <h3>Plan Your Itinerary for {planet.title}</h3>
 
-            <h4>Select Places to Visit:</h4>
+            <h4 className="white-text">Select Places to Visit:</h4>
             {planet.points_of_interest && (
                 <ul>
                     {planet.points_of_interest.map((poi) => (
@@ -57,7 +57,7 @@ function Itinerary() {
                 </ul>
             )}
 
-            <h4>My Bucket list:</h4>
+            <h4 className="white-text">My Bucket list:</h4>
             <ul>
                 {selectedPOIs.map((poi) => (
                     <li key={poi.name}>

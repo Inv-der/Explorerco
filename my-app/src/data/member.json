@@ -6,31 +6,31 @@
       "name": "Arun K Nair",
       "role": "Frontend and UI Designer",
       "description": "Creative visionary, excels in frontend and UI design, ensures stunning functionality and aesthetics.",
-      "image": "../team/arun_k_nair_image.png"
+      "image": "/planets/ak.jpeg"
     },
     {
       "name": "Arun Krishnadas",
       "role": "Team Coordinator and Documentation",
       "description": " Coordinates, organizes, documents, and keeps the team on track.",
-      "image": "../team/arun_k_nair_image.png"
+      "image": "/planets/dasan.jpeg"
     },
     {
       "name": "Abhijith Suresh",
       "role": "Coder and Design Consultant",
       "description": "Abhijith: Coding whiz, design guru, bridges code and design seamlessly.",
-      "image": "../team/arun_k_nair_image.png"
+      "image": "/planets/me.jpeg"
     },
     {
       "name": "Andrea Sunny",
       "role": "Documentation and Presenter",
       "description": "Andrea excels in communication, creates comprehensive documentation, and adeptly presents.",
-      "image": "../team/arun_k_nair_image.png"
+      "image": "/planets/sunny.jpeg"
     },
     {
       "name":"Binduja Babu",
       "role":"PRO",
       "description":"Binduja collaborates with Andrea for meticulous, engaging documentation & social media management.",
-      "image": "../team/arun_k_nair_image.png"
+      "image": "/planets/binduja.jpeg"
     }
     
     

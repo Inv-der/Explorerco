@@ -9,9 +9,10 @@ function PlanetInfo() {
   const planet = planetsData[planetName];
 
   if (!planet) return <p>Planet not found!</p>;
+  
 
   return (
-    <div className="planet-info-container">
+    <div className="planet-info-container white-text">
       <h1 className="planet-title">{planet.title}</h1>
       <div className="planet-image-container">
         {/* Uncomment the iframe if you want to use it */}

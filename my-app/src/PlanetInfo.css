@@ -1,7 +1,7 @@
 .planet-info-container {
   padding: 20px;
-  background-color: #121212;
-  color: #fff;
+  /* background-color: #121212; */
+  color: #ffff;
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   max-width: 800px;
@@ -93,4 +93,11 @@
 .points-of-interest h3 {
   font-size: 1.2rem;
   margin-bottom: 5px;
+}
+.white-text h1,
+.white-text p,
+.white-text span,
+.white-text h2,
+.white-text h3 {
+  color: white;
 }
