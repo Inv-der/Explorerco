@@ -2,6 +2,7 @@
 
 Welcome to the "Exploring the Solar System" project! This React-based application provides users with a beautiful journey through the solar system, showcasing planets, their features, and providing useful travel tips.
 
+[video demo](https://www.canva.com/design/DAFwr-RkG4w/)
 
 
 ## Features
@@ -17,6 +18,10 @@ Welcome to the "Exploring the Solar System" project! This React-based applicatio
     ```bash
     git clone https://github.com/your-github-username/solar-system-explorer.git
     cd solar-system-explorer
+    ```
+2. **move to directory**:
+    ```bash
+    cd my-app
     ```
 
 2. **Install Dependencies**:
