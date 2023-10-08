@@ -25,8 +25,10 @@ function About() {
           <img className="img" src={member.image}/>
           <div className="textBox">
             <p className="text head">{member.name}</p>
-            <span>{member.role}</span>
-            <p className="text price">{member.description}</p>
+            <div className='black-text'>
+            <span >{member.role}</span>
+            </div>
+            <p className="text price" className='black-text'>{member.description}</p>
           </div>
         </div>
            

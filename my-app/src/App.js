@@ -13,6 +13,7 @@ import RegistrationComponent from './components/RegistrationComponent';
 import LoginComponent from "./components/LoginComponent";
 import ProtectedPage from "./components/ProtectedPage";
 import { auth } from './config/firebase.js';
+import Explore from './Explore';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -58,6 +59,7 @@ function App() {
           <Route path="/booking" element={<SpaceTourismBooking />} />
           <Route path="/planet-info/:planetName" element={<div><PlanetInfo /></div>} />
           <Route path="/about" element={<About />} />
+          <Route path="/explore" element={<Explore />} />
         </Routes>
       </div>
     </Router>
