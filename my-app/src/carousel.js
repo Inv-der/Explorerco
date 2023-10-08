@@ -6,13 +6,13 @@ function Carousel() {
       <div className="carousel-inner">
         <div className="carousel-item active">
           <video className="d-block w-100" autoPlay loop muted style={{ borderRadius: '15px' }}>
-            <source src="\videos\INV@DER$.mp4" type="video/mp4" />
+            <source src="\videos\caro1.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
         <div className="carousel-item">
           <video className="d-block w-100" autoPlay loop muted style={{ borderRadius: '15px' }}>
-            <source src="\videos\INV@DER$.gif" type="video/gif" />
+            <source src="\videos\caro2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
