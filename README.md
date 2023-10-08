@@ -2,8 +2,7 @@
 
 Welcome to the "Exploring the Solar System" project! This React-based application provides users with a beautiful journey through the solar system, showcasing planets, their features, and providing useful travel tips.
 
-![Project Screenshot](./path/to/screenshot.png)
-_Note: Replace the path with an actual screenshot of your application if available._
+
 
 ## Features
 
